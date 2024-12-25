@@ -1,6 +1,6 @@
-﻿**1.0 Network Fundamentals**
+﻿## **1.0 Network Fundamentals**
 
-1. **Explain the role and function of network components** 
+#  **1.1 Explain the role and function of network components** 
 
 1\.1a Routers
 
