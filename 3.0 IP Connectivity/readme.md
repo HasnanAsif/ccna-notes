@@ -1,10 +1,10 @@
-﻿**3.0 IP Connectivity**
+﻿# **3.0 IP Connectivity**
 
-**3.1 Interpret the components of routing table**
+## **3.1 Interpret the components of routing table**
 
 The routing table contains critical information that routers use to determine the best path for forwarding packets to their destinations. Each component of the routing table has a specific role:
 
-3\.1.a Routing Protocol Code
+#### 3\.1.a Routing Protocol Code
 
 - Definition: A code that identifies the source of the route (how the route was learned)
 - Examples:
@@ -15,25 +15,25 @@ The routing table contains critical information that routers use to determine th
   - D – EIGRP (Enhanced Interior Gateway Routing Protocol)
   - B – BGP (Border Gateway Protocol)
 
-3\.1.b Prefix
+#### 3\.1.b Prefix
 
 - Definition: The network address or destination IP address range to which the route applies.
 - Example: 192.168.1.0 in a route like 192.168.1.0/24.
 
-3\.1.c Network Mask
+#### 3\.1.c Network Mask
 
 - Definition: Indicates the subnet mask associated with the prefix, defining the range of IP addresses within the route.
 - Example: 
   - /24 corresponds to 255.255.255.0.
   - In 192.168.1.0/24, the /24 defines the first 24 bits as the network portion.
 
-3\.1.d Next Hop
+#### 3\.1.d Next Hop
 
 - Definition: The IP address of the next router or device that the packet should be forwarded to, on its path to the destination.
 - Example: 10.1.1.1 in a route like:
   192.168.2.0/24 via 10.1.1.1.
 
-3\.1.e Administrative Distance (AD)
+#### 3\.1.e Administrative Distance (AD)
 
 - Definition: A value that indicates the trustworthiness of a route, with lower values being preferred.
 - Examples:
@@ -43,8 +43,7 @@ The routing table contains critical information that routers use to determine th
   - OSPF: AD = 110
 - Key Point: AD is used to choose between multiple routes learned via different protocols.
 
-
-3\.1.f Metric
+#### 3\.1.f Metric
 
 - Definition: A value used to determine the best path to a destination when multiple routes exist for the same network. Lower metrics are preferred.
 - Examples:
@@ -52,28 +51,28 @@ The routing table contains critical information that routers use to determine th
   - OSPF uses cost (based on bandwidth).
   - EIGRP uses a composite metric (bandwidth, delay, etc.).
 
-3\.1.g Gateway of Last Resort
+#### 3\.1.g Gateway of Last Resort
 
 - Definition: The router or next-hop IP address where packets destined for unknown or non-matching networks are forwarded (default route).
 - Example:
   - 0.0.0.0/0 is commonly used as the prefix for a default route.
   - A route like S\* 0.0.0.0/0 via 192.168.1.1 indicates that traffic for all unknown networks goes to 192.168.1.1.
 
-**3.2 Determine how a router makes a forwarding decision by default**
+## **3.2 Determine how a router makes a forwarding decision by default**
 
 When a router receives a packet, it makes a forwarding decision based on three key factors in order:
 
-3\.2a Longest Prefix Match
+#### 3\.2a Longest Prefix Match
 
 - Definition: The router searches its routing table and selects the route with the most specific (longest) subnet mask that matches the destination IP address.
 - Why it matters: A longer prefix provides a more precise match for the destination.
 
-3\.2.b Administrative Distance (AD)
+#### 3\.2.b Administrative Distance (AD)
 
 - Definition: Administrative Distance is a value that determines the trustworthiness of a route when multiple routes to the same destination exist but are learned from different routing protocols.
 - Lower AD values are preferred
 
-3\.2.c Routing Protocol Metric
+#### 3\.2.c Routing Protocol Metric
 
 - Definition: If multiple routes to the same destination exist from the same routing protocol, the router uses the metric to determine the best path. The route with the lowest metric is chosen.
 - How Metrics are Calculated:
@@ -87,11 +86,11 @@ Order of Router Forwarding Decision
 - Administrative Distance – Choose the route with the lowest AD if multiple routes exist.
 - Routing Protocol Metric – Select the route with the lowest metric when routes are from the same protocol.
 
-**3.3 Configure and verify IPv4 and IPv6 static routing**
+## **3.3 Configure and verify IPv4 and IPv6 static routing**
 
 Static routes allow network administrators to manually specify paths for traffic. Below are the key types of static routes and their configurations.
 
-3\.3a Default Route
+#### 3\.3a Default Route
 
 - A default route acts as a "catch-all" for any destination that doesn't match a specific route in the routing table.
 
@@ -103,7 +102,7 @@ Static routes allow network administrators to manually specify paths for traffic
   - ipv6 route ::/0 <next-hop-IP>
   - Example: ipv6 route ::/0 2001:db8::1
 
-3\.3b Network Route
+#### 3\.3b Network Route
 
 - A network route specifies a route to an entire subnet or network.
 - IPv4 Configuration
@@ -115,7 +114,7 @@ Static routes allow network administrators to manually specify paths for traffic
   - ipv6 route <destination-prefix> <prefix-length> <next-hop-IP>
   - Example: ipv6 route 2001:db8:1::/64 2001:db8::1
 
-3\.3c Host Route
+#### 3\.3c Host Route
 
 - A host route is a route to a specific IP address, often used for precise control over traffic. (/32 for IPv4 or /128 for IPv6)
 
@@ -127,7 +126,7 @@ Static routes allow network administrators to manually specify paths for traffic
   - ipv6 route <host-IP>/128 <next-hop-IP>
   - Example: ipv6 route 2001:db8:1::10/128 2001:db8::1
 
-3\.3b Floating Static 
+#### 3\.3d Floating Static 
 
 - A floating static route acts as a backup route and only takes effect if the primary route fails. This is achieved by assigning a higher administrative distance (AD) to the static route.
 
@@ -159,9 +158,9 @@ Summary
 - Host Route: Route to a specific IP address (/32 for IPv4 or /128 for IPv6).
 - Floating Static Route: Backup route with a higher administrative distance.
 
-**3.4 Configure and verify single area OSPFv2**
+## **3.4 Configure and verify single area OSPFv2**
 
-3\.4.a Neighbor adjacencies
+#### 3\.4.a Neighbor adjacencies
 
 - OSPF routers establish neighbor relationships with ‘hello’ packets being communicated to each other for the purpose of exchanging routing information. Neighbor adjacency is formed when OSPF parameters (such as area ID, hello/dead timers, network type, and authentication if configured) match between routers.
 
@@ -176,7 +175,7 @@ Summary
 - Verification of Adjacencies
   - Show ip ospf neighbor
 
-3\.4.b Point-to-point
+#### 3\.4.b Point-to-point
 
 - Point-to-point networks connect two OSPF routers directly without DR/BDR election. This is commonly used on serial links.
 
@@ -192,7 +191,7 @@ Summary
 - Verify the OSPF neighbor on the link
   - show ip ospf neighbor
 
-3\.4.c Broadcast (DR/BDR selection)
+#### 3\.4.c Broadcast (DR/BDR selection)
 
 - Broadcast networks allow multiple OSPF routers to communicate. OSPF elects a Designated Router (DR) and Backup Designated Router (BDR) to reduce the number of adjacencies and minimize LSA flooding.
 
@@ -213,7 +212,7 @@ Summary
 - Verify DR/BDR
   - show ip ospf neighbor
 
-3\.4.d Router ID
+#### 3\.4.d Router ID
 
 - The Router ID uniquely identifies an OSPF router in the network. It is selected in this order:
   - Manually configured Router ID.
@@ -231,7 +230,7 @@ Summary
   - Clear ip ospf process
   - Reload (disrupts all network operations during reload)
 
-**3.5 Describe the purpose, functions, and concepts of first hop redundancy protocols**
+## **3.5 Describe the purpose, functions, and concepts of first hop redundancy protocols**
 
 - Purpose of FHRP
   - First Hop Redundancy Protocols (FHRPs) ensure gateway redundancy by providing a backup default gateway if the primary gateway fails. This improves network availability and reliability by enabling hosts to seamlessly switch to a backup router without manual reconfiguration.
