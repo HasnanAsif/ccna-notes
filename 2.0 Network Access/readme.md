@@ -26,24 +26,24 @@
 - This is done using Router-on-a-Stick or SVI (Switch Virtual Interface).
 
 - Router-on-a-Stick Example:
-  - `Interface GIgabitEthernet 0/0.10
-  - Encapsulation dot1q 10
-  - Ip address 192.168.10.1 255.255.255.0`
+  - `Interface GIgabitEthernet 0/0.10`
+  - `Encapsulation dot1q 10`
+  - `Ip address 192.168.10.1 255.255.255.0`
   - –
-  - `Interface GigabitEthernet 0/0.20
-  - Encapsulation dot1q 20
-  - Ip address 192.168.20.1 255.255.255.0`
+  - `Interface GigabitEthernet 0/0.20`
+  - `Encapsulation dot1q 20`
+  - `Ip address 192.168.20.1 255.255.255.0`
 
 - SVI (Switch Virtual Interface) Example:
-  - interface vlan 10
-  - ` `ip address 192.168.10.1 255.255.255.0
-  - ` `no shutdown
+  - `interface vlan 10`
+  - `ip address 192.168.10.1 255.255.255.0`
+  - `no shutdown`
   - -
-  - interface vlan 20
-  - ` `ip address 192.168.20.1 255.255.255.0
-  - ` `no shutdown
+  - `interface vlan 20`
+  - `ip address 192.168.20.1 255.255.255.0`
+  - `no shutdown`
 
-- Show ip route (verification command)
+- `Show ip route` (verification command)
 
 ## **2.2 Configure and verify interswitch connectivity**
 
@@ -52,79 +52,78 @@
 - Trunk ports carry traffic for multiple VLANs between switches. They allow VLAN traffic to span across the network.
 
 - Configuration Example (on both switches):
-  - interface GigabitEthernet0/1
-  - ` `switchport mode trunk
-  - ` `switchport trunk allowed vlan 10,20,30   (Allow specific VLANs across the trunk)
-  - ` `no shutdown
+  - `interface GigabitEthernet0/1`
+  - `switchport mode trunk`
+  - `switchport trunk allowed vlan 10,20,30`   (Allow specific VLANs across the trunk)
+  - `no shutdown`
 
 - Verification commands
-  - Show interfaces trunk
-  - Show vlan brief
+  - `Show interfaces trunk`
+  - `Show vlan brief`
 
 #### 2\.2.b 802.1Q
 
 - 802.1Q is the VLAN tagging protocol used for trunking, allowing VLAN IDs to be identified across trunk links.
 
 - Configuration Example:
-  - interface GigabitEthernet0/1
-  - ` `switchport trunk encapsulation dot1q  (Specify 802.1Q encapsulation)
-  - ` `switchport mode trunk
+  - `interface GigabitEthernet0/1`
+  - `switchport trunk encapsulation dot1q`  (Specify 802.1Q encapsulation)
+  - `switchport mode trunk`
 
 - Verification commands:
-
-  Show interfaces trunk
+  - `Show interfaces trunk`
 
 #### 2\.2.c Native VLAN
 
 - The native VLAN carries untagged traffic on a trunk link. It must match on both ends of the link to avoid traffic drops.
 
 - Configuration Example (Set Native VLAN to 99):
-  - interface GigabitEthernet0/1
-  - switchport trunk native vlan 99
+  - `interface GigabitEthernet0/1`
+  - `switchport trunk native vlan 99`
 
 - Verification Commands:
-  - show interfaces trunk
-  - show running-config interface GigabitEthernet0/1
+  - `show interfaces trunk`
+  - `show running-config interface GigabitEthernet0/1`
 
 ## **2.3 Configure and verify Layer 2 discovery protocols (Cisco Discovery Protocol and LLDP)**
 
-- Cisco Discovery Protocol (CDP)
+- #### Cisco Discovery Protocol (CDP)
   - CDP is a Cisco proprietary protocol for discovering directly connected Cisco devices.
 
 - Enable/Disable CDP:
-  - cdp run (Globally enable CDP)
-  - interface GigabitEthernet0/1
-  - ` `cdp enable (Enable CDP on an interface)
+  - `cdp run` (Globally enable CDP)
+  - `interface GigabitEthernet0/1`
+  - `cdp enable` (Enable CDP on an interface)
 
 - Verification command:
-  - Show cdp neighbors
+  - `Show cdp neighbors`
 
-- Link Layer Discovery Protocol (LLDP)
+- #### Link Layer Discovery Protocol (LLDP)
   - LLDP is an open-standard protocol for discovering devices on the same Layer 2 network.
 
 - Enable/Disable LLDP:
-  - lldp run  (Globally enable LLDP)
-  - interface GigabitEthernet0/1
-  - ` `lldp transmit
-  - ` `lldp receive
+  - `lldp run`  (Globally enable LLDP)
+  - `interface GigabitEthernet0/1`
+  - `lldp transmit`
+  - `lldp receive`
 
 - Verification command:
-  - Show lldp neighbors
+  - `Show lldp neighbors`
 
 ## **2.4 Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)**
 
 - LACP (Link Aggregation Control Protocol) is a Etherchannel that dynamically bundles multiple links into a single logical channel for redundancy and load balancing.
 
 - Configuration example:
-  - interface range GigabitEthernet0/1 - 2
-  - ` `channel-group 1 mode active  ( Enable LACP (active mode) )
-  - interface port-channel 1
-  - ` `switchport mode trunk
-  - ` `switchport trunk allowed vlan 10,20,30
+  - `interface range GigabitEthernet0/1 - 2`
+  - `channel-group 1 mode active`  ( Enable LACP (active mode) )
+  - `interface port-channel 1`
+  - `switchport mode trunk`
+  - `switchport trunk allowed vlan 10,20,30`
 
 - Verification commands:
-  - show etherchannel summary
-  - show running-config interface port-channel 1
+  - `show etherchannel summary`
+  - `show running-config interface port-channel 1`
 
 ## **2.5 Interpret basic operations of Rapid PVST+ Spanning Tree Protocol**
 
@@ -135,7 +134,7 @@
 - Designated Port: Port forwarding traffic towards a specific segment.
 - Alternate Port: Backup port to prevent loops.
 - Verification command:
-  - show spanning-tree
+  - `show spanning-tree`
 
 #### 2\.5.b Port states (forwarding/blocking)
 
@@ -149,29 +148,29 @@
 - PortFast skips the listening and learning states, enabling ports to immediately transition to forwarding for edge devices.
 
 - Configuration example:
-  - interface GigabitEthernet0/1
-  - ` `spanning-tree portfast
+  - `interface GigabitEthernet0/1`
+  - `spanning-tree portfast`
 
 #### 2\.5.d Root guard, loop guard, BPDU filter, and BPDU guard
 
 - Root Guard: Prevents unauthorized switches from becoming the root bridge.
-  - interface GigabitEthernet0/1
-  - spanning-tree guard root
+  - `interface GigabitEthernet0/1`
+  - `spanning-tree guard root`
 
 - Loop Guard: Prevents loops by disabling non-designated ports in inconsistent states.
-  - interface GigabitEthernet0/1
-  - spanning-tree guard loop
+  - `interface GigabitEthernet0/1`
+  - `spanning-tree guard loop`
 
 - BDPU Filter: Suppresses BPDU transmission/processing on a port.
-  - interface GigabitEthernet0/1
-  - spanning-tree bpdufilter enable
+  - `interface GigabitEthernet0/1`
+  - `spanning-tree bpdufilter enable`
 
 - BDPU Guard: Disables a port if it receives unexpected BPDUs.
-  - interface GigabitEthernet0/1
-  - spanning-tree bpduguard enable
+  - `interface GigabitEthernet0/1`
+  - `spanning-tree bpduguard enable`
 
 - Verification command
-  - Show spanning-tree summary
+  - `Show spanning-tree summary`
 
 ## **2.6 Describe Cisco Wireless Architectures and AP modes**
 
@@ -238,9 +237,9 @@ Access Points (Aps)
   - Typically connected to switch access ports.
   - If using PoE (Power over Ethernet), the AP is powered directly through the Ethernet cable, eliminating the need for a separate power source.
 - Configuration: Switchport set to access mode for the VLAN serving wireless clients
-  - interface GigabitEthernet0/1
-  - ` `switchport mode access
-  - ` `switchport access vlan 10
+  - `interface GigabitEthernet0/1`
+  - `switchport mode access`
+  - `switchport access vlan 10`
 
 Wireless LAN Controller (WLC)
 
@@ -250,8 +249,8 @@ Wireless LAN Controller (WLC)
   - Trunking allows the WLC to handle traffic from multiple VLANs, including management, control, and user traffic VLANs.
 - Example configuration for WLC connection:
   - interface GigabitEthernet0/2
-  - ` `switchport mode trunk
-  - ` `switchport trunk allowed vlan 10,20,30
+  - `switchport mode trunk`
+  - `switchport trunk allowed vlan 10,20,30`
 
 Access Ports (APs and Clients)
 
@@ -267,9 +266,9 @@ Trunk Ports (WLC and APs in FlecConnect Mode)
   - WLC connections
   - Aps in FlexConnect Mode (locally switching traffic to multiple VLANs)
 - Example Configuration for AP in FlexConnect Mode:
-  - interface GigabitEthernet0/3
-  - ` `switchport mode trunk
-  - ` `switchport trunk allowed vlan 10,20,30
+  - `interface GigabitEthernet0/3`
+  - `switchport mode trunk`
+  - `switchport trunk allowed vlan 10,20,30`
 
 Link Aggregation Group (LAG)
 
@@ -281,11 +280,11 @@ Link Aggregation Group (LAG)
   - Enable LAG on the WLC (this aggregates all physical WLC ports).
   - Configure the switch with a port-channel interface.
 - Example LAG Configuration
-  - interface range GigabitEthernet0/1 - 2
-  - ` `channel-group 1 mode active  (Enable LACP)
-  - interface port-channel 1
-  - ` `switchport mode trunk
-  - ` `switchport trunk allowed vlan 10,20,30
+  - `interface range GigabitEthernet0/1 - 2`
+  - `channel-group 1 mode active`  (Enable LACP)
+  - `interface port-channel 1`
+  - `switchport mode trunk`
+  - `switchport trunk allowed vlan 10,20,30`
 
 |**Component**||||
 | :- | :- | :- | :- |
