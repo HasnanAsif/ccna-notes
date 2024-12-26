@@ -8,12 +8,27 @@ The routing table contains critical information that routers use to determine th
 
 - Definition: A code that identifies the source of the route (how the route was learned)
 - Examples:
-  - C – Connected (directly connected interfaces)
-  - S – Static (manually configured route)
-  - R – RIP (Routing Information Protocol)
-  - O – OSPF (Open Shortest Path First)
-  - D – EIGRP (Enhanced Interior Gateway Routing Protocol)
-  - B – BGP (Border Gateway Protocol)
+  - `L` - Local
+  - `C` – Connected (directly connected interfaces)
+  - `S` – Static (manually configured route)
+  - `I` - IGRP
+  - `R` - RIP (Routing Information Protocol)
+  - `M` - Mobile
+  - `B` - BGP (Border Gateway Protocol)
+  - `D` – EIGRP (Enhanced Interior Gateway Routing Protocol)
+  - `EX` - EIGRP External (The route that was redistributed into EIGRP)
+  - `O` – OSPF (Open Shortest Path First)
+  - `IA` - OSPF Inter Area
+  - `N1` - OSPF NSSA external type 1
+  - `N2` - OSPF NSSA external type 2
+  - `E1` - OSPF external type 1
+  - `E2` - 	OSPF external type 2
+  - `E` - EGP (Exterior Gateway Protocol)
+  - `i` - IS-IS
+  - `L1` - IS-IS level-1
+  - `L2` - IS-IS level-2
+  - `ia` - IS-IS inter area
+  - `*` - Candidate default (default route)
 
 #### 3\.1.b Prefix
 
