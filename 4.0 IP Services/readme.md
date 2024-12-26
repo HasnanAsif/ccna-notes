@@ -36,12 +36,11 @@
   - `ip nat inside source static (inside-local-ip) (inside-global-ip)`
     - inside-local-ip: Private IP of the internal device (e.g., 192.168.1.10).
     - inside-global-ip: Public IP to which the private IP is mapped (e.g., 203.0.113.10).
-  - -
   - `interface (inside-interface)`
   - `ip nat inside`
   - –
   - `interface (outside-interface)`
-  - `i`p nat outside`
+  - `ip nat outside`
 
 - NAT Pools Configuration
   - `ip nat pool (pool-name) (start-public-ip) (end-public-ip) netmask (subnet-mask)`
@@ -113,12 +112,16 @@ Functions of SNMP in Network Operations
 
 - Network Monitoring
   - SNMP collects real-time performance data from devices
+
 - Fault Detections
   - Devices send traps (alerts) to the SNMP manager when faults or specific conditions occur
+
 - Configurations Management
   - SNMP can modify configurations on devices remotely using SET commands
+
 - Performance Analysis
   - Historical SNMP data can help analyze network performance trends and predict future issues.
+
 - Centralized Management
   - SNMP enables a centralized monitoring system (SNMP Manager) to interact with distributed network devices.
 
@@ -126,19 +129,22 @@ SNMP Components
 
 - SNMP Manager
   - The central system that monitors and controls SNMP-enabled devices.
+
 - SNMP Agent
   - Software running on network devices (e.g., routers, switches, servers) that collect and send information to the SNMP manager.
+
 - Management Information Base
   - A database of objects managed by the SNMP agent (e.g., CPU load, memory usage).
+
 - SNMP Traps
   - Notifications sent from agents to managers for specific events or issues
 
 Key SNMP Commands
 
-- GET : requests data from managed device
-- GETNEXT : requests the next piece of data
-- SET : modifies a value on the managed device
-- TRAP : sends an alert to the SNMP manager
+- `GET` : requests data from managed device
+- `GETNEXT` : requests the next piece of data
+- `SET` : modifies a value on the managed device
+- `TRAP` : sends an alert to the SNMP manager
 
 Example Use Case
 
@@ -206,6 +212,7 @@ Example Use Case
   - Purpose: Enables the network to identify and differentiate traffic types for further QoS treatment.
   - Example: Voice, video, and data traffic are classified into separate classes.
 
+
 - Marking
   - Definition: Adding a QoS tag or value to packets to indicate their priority level.
   - Mechanism:
@@ -213,6 +220,7 @@ Example Use Case
     - Layer 3: DSCP (Differentiated Services Code Point) in the IP header.
   - Purpose: Ensures downstream devices can recognize and prioritize the traffic based on the marking.
   - Example: Voice packets are marked with a high DSCP value like EF (Expedited Forwarding).
+
 
 - Queuing
   - Definition: The process of placing packets into different queues for transmission based on their priority.
@@ -223,9 +231,11 @@ Example Use Case
     - Class-Based Weighted Fair Queuing (CBWFQ): Customizes queue behavior per class.
     - Low Latency Queuing (LLQ): Adds strict priority queuing for delay-sensitive traffic like voice.
 
+
 - Congestion Management
   - Definition: Mechanisms to manage traffic when the network experiences congestion.
   - Example: Traffic is queued based on priority, ensuring critical packets are sent first while others wait.
+
 
 - Congestion Avoidance
   - Definition: Proactively dropping low-priority packets to avoid congestion before buffers overflow.
@@ -233,12 +243,14 @@ Example Use Case
   - Random Early Detection (RED): Randomly drops packets before queues are full.
   - Weighted RED (WRED): Applies RED with priority weights for different traffic types.
 
+
 - Policing
   - Definition: Enforces a traffic rate limit by dropping or remarking packets that exceed the specified bandwidth.
   - Purpose: Controls the traffic rate at the network edge to prevent over-utilization.
   - Behavior:
     - Traffic exceeding the limit is dropped (hard policing).
     - Traffic may be remarked to a lower QoS level.
+
 
 - Shaping
   - Definition: Smooths traffic flow by buffering excess traffic and sending it at a defined rate.
@@ -289,6 +301,7 @@ Example Use Case
   - Simple and lightweight file transfer without authentication
   - Limited error-checking; ideal for local transfers (e.g., network boot or recovery)
   - Used in environments with low overhead (e.g., Cisco router booting via TFTP).
+
 
 - FTP (File Transfer Protocol)
 - Capabilities:
