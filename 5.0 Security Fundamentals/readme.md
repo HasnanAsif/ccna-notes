@@ -243,7 +243,7 @@ Layer 2 security features protect against attacks such as spoofing, MAC flooding
   - `Show ip dhcp snooping`
   - `Show ip dhcp binding`
 
-Dynamic ARP Inspection (DAI) 
+**Dynamic ARP Inspection (DAI)** 
 - Prevents ARP spoofing attacks by verifying ARP packets against the DHCP snooping binding table.
 - Configuration Example:
   - `ip arp inspection vlan 10`
@@ -359,24 +359,24 @@ Wireless security protocols are designed to protect data transmitted over Wi-Fi 
 ## **5.10 Configure and verify WLAN within the GUI using WPA2 PSK**
 
 **Configuring WLAN with WPA2 PSK:**
-1. Access Router/Access Point GUI
+1. **Access Router/Access Point GUI**
    1. Open a browser and enter the default gateway IP (usually 192.168.1.1 or 192.168.0.1) to access the router’s web interface. Log in with admin credentials.
-1. Navigate to Wireless Settings
+1. **Navigate to Wireless Settings**
    1. Once inside the router GUI, locate “Wireless” section. This might vary depending on the router model but usually labeled as ‘Wireless Settings’ or ‘Wi-Fi Configuration’.
-1. Set the SSID
+1. **Set the SSID**
    1. Enter a unique SSID to identify your WLAN. This is the name that will appear on devices trying to connect to the network.
-1. Choose WPA2 PSK
+1. **Choose WPA2 PSK**
    1. Under the security settings, select WPA2 PSK (sometimes labeled as WPA2 Personal) as the security mode. Ensure that WPA2 is chosen over WPA for stronger encryption.
-1. Enter Pre-Shared Key (PSK)
+1. **Enter Pre-Shared Key (PSK)**
    1. Create a strong passphrase for the pre-shared key (at least 8 characters). The PSK will be required by devices attempting to connect to the WLAN.
-1. Save Settings
+1. **Save Settings**
    1. After setting the SSID and WPA2 PSK, save the changes. The router will apply the configurations, which may cause a brief disconnection of devices from the network.
 
 **Verifying WLAN Configuration:**
-1. Connect a Device
+1. **Connect a Device**
    1. Using a wireless device (e.g., laptop, smartphone), locate the SSID you configured. Select it and enter the PSK to establish a connection
-1. Verify Network Security
+1. **Verify Network Security**
    1. After successfully connecting, verify the encryption by access the network settings on a connected device. Ensure the connection is using WPA2 encryption.
-1. Verify Internet Access
+1. **Verify Internet Access**
    1. Once connected to the WLAN, test the internet connection by opening a website or running a speed test to ensure full functionality.
 
