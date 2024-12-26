@@ -7,7 +7,7 @@
 - Access ports are configured to belong to a specific VLAN and are used to connect end devices like PCs or phones.
 - Voice VLANs are separate VLANs configured on access ports to carry voice traffic for IP phones.
 - Example Configuration:
-  - 'Interface GigabitEthernet 0/1` 
+  - `Interface GigabitEthernet 0/1` 
   - `Switchport mode access`
   - `Switchport access vlan 10` (assigns data VLAN 10)
   - `Switchport voice vlan 20` (assigns voice VLAN 20)
@@ -26,13 +26,13 @@
 - This is done using Router-on-a-Stick or SVI (Switch Virtual Interface).
 
 - Router-on-a-Stick Example:
-  - Interface GIgabitEthernet 0/0.10
+  - `Interface GIgabitEthernet 0/0.10
   - Encapsulation dot1q 10
-  - Ip address 192.168.10.1 255.255.255.0
+  - Ip address 192.168.10.1 255.255.255.0`
   - –
-  - Interface GigabitEthernet 0/0.20
+  - `Interface GigabitEthernet 0/0.20
   - Encapsulation dot1q 20
-  - Ip address 192.168.20.1 255.255.255.0
+  - Ip address 192.168.20.1 255.255.255.0`
 
 - SVI (Switch Virtual Interface) Example:
   - interface vlan 10
