@@ -33,7 +33,8 @@ Mitigation Techniques
 
 ## **5.2 Describe security program elements (user awareness, training, and physical access control)**
 
-- User Awareness : Educating users to recognize security threats and follow best practices.
+User Awareness 
+- Educating users to recognize security threats and follow best practices.
 - Purpose: Reduces human error and increases vigilance against common attacks.
 - Examples:
   - Recognizing phishing emails and social engineering tactics.
@@ -41,7 +42,8 @@ Mitigation Techniques
   - Following strong password policies.
   - Awareness of safe browsing habits.
 
-- Training : Structured programs to teach employees proper security procedures and responses.
+- Training 
+- Structured programs to teach employees proper security procedures and responses.
 - Purpose: Ensures users and IT staff have the necessary skills to protect systems and data.
 - Examples:
   - Hands-on training for incident response (e.g., ransomware attacks).
@@ -49,7 +51,8 @@ Mitigation Techniques
   - Simulated phishing campaigns to test and improve user awareness.
   - Regular security compliance training (e.g., HIPAA, PCI-DSS).
 
-- Physical Access Control : Security measures to prevent unauthorized physical access to systems, devices, or locations.
+- Physical Access Control 
+- Security measures to prevent unauthorized physical access to systems, devices, or locations.
 - Purpose: Protects critical infrastructure and prevents tampering with equipment.
 - Examples:
   - Access badges and biometric scanners for restricted areas.
@@ -60,28 +63,28 @@ Mitigation Techniques
 ## **5.3 Configure and verify device access control using local passwords**
 
 - Set a Console Password
-  - Line console 0
-  - Password pass123
-  - Login
+  - `line console 0`
+  - `password pass123`
+  - `login`
 
 - Set VTY Line Password (Telnet/SSH)
-  - Line vty 0 4
-  - Password pass123
-  - Login
+  - `line vty 0 4`
+  - `password pass123`
+  - `login`
 
 - Set the Enable (Privileged EXEC Mode) Password
-  - Enable password pass123
+  - `enable password pass123`
 
 - Set the Enable Secret (Encrypted Password)
-  - Enable secret pass123
+  - `enable secret pass123`
 
 - Verify Device Access Control
-  - Show running-config | include password | secret
+  - `show running-config | include password | secret`
   - The enable secret will appear encrypted, while other passwords will remain visible if not encrypted
 
 - Verification commands
-  - Show running-config : verifies passwords and access lines
-  - Show users : Displays active sessions on the device
+  - `show running-config` : verifies passwords and access lines
+  - `show users` : Displays active sessions on the device
 
 ## **5.4 Describe security password policies elements, such as management, complexity, and password alternatives (multifactor authentication, certificates, and biometrics)**
 
