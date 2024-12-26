@@ -2,7 +2,8 @@
 
 ## **5.1 Define key security concepts (threats, vulnerabilities, exploits, and mitigation techniques)**
 
-- Threats : A potential danger that can exploit vulnerabilities to harm systems, data, or networks.
+Threats 
+- A potential danger that can exploit vulnerabilities to harm systems, data, or networks.
 - Examples
   - Malware (viruses, worms, ransomware)
   - Phishing attacks (social engineering)
