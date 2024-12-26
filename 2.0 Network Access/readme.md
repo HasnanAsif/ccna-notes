@@ -7,12 +7,12 @@
 - Access ports are configured to belong to a specific VLAN and are used to connect end devices like PCs or phones.
 - Voice VLANs are separate VLANs configured on access ports to carry voice traffic for IP phones.
 - Example Configuration:
-  - 'Interface GigabitEthernet 0/1'
-  - Switchport mode access
-  - Switchport access vlan 10 (assigns data VLAN 10)
-  - Switchport voice vlan 20 (assigns voice VLAN 20)
-  - No shutdown
-  - Show vlan brief (verification command) 
+  - 'Interface GigabitEthernet 0/1` 
+  - `Switchport mode access`
+  - `Switchport access vlan 10` (assigns data VLAN 10)
+  - `Switchport voice vlan 20` (assigns voice VLAN 20)
+  - `No shutdown`
+  - `Show vlan brief` (verification command) 
 
 #### 2\.1.b Default VLAN
 
