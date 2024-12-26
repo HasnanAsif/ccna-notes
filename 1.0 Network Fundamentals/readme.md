@@ -6,7 +6,7 @@
 
 - Routers direct data packets between different networks, ensuring efficient data transmission and connectivity.
 
-### 1\.1.b Layer 2 and Layer 3 Switches
+#### 1\.1.b Layer 2 and Layer 3 Switches
 
 - Layer 2 switches handle data transmission within the same network (using MAC addresses), while
 - Layer 3 switches also route data between different networks (using IP addresses).
