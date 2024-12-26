@@ -95,11 +95,11 @@ Static routes allow network administrators to manually specify paths for traffic
 - A default route acts as a "catch-all" for any destination that doesn't match a specific route in the routing table.
 
 - IPv4 Configuration: 
-  - ip route 0.0.0.0 0.0.0.0 (next-hop-IP) or (exit-interface)
+  - `ip route 0.0.0.0 0.0.0.0 (next-hop-IP) or (exit-interface)`
   - Example: `ip route 0.0.0.0 0.0.0.0 192.168.1.1`
 
 - IPv6 Configuration: 
-  - ipv6 route ::/0 (next-hop-IP)
+  - `ipv6 route ::/0 (next-hop-IP)`
   - Example: `ipv6 route ::/0 2001:db8::1`
 
 #### 3\.3b Network Route
@@ -107,11 +107,11 @@ Static routes allow network administrators to manually specify paths for traffic
 - A network route specifies a route to an entire subnet or network.
 - IPv4 Configuration
 
-  - ip route (destination-network) (subnet-mask) (next-hop-IP) or (exit-interface)
+  - `ip route (destination-network) (subnet-mask) (next-hop-IP) or (exit-interface)`
   - Example: `ip route 192.168.10.0 255.255.255.0 192.168.1.1`
 
 - IPv6 Configuration
-  - ipv6 route (destination-prefix) (prefix-length) (next-hop-IP)
+  - `ipv6 route (destination-prefix) (prefix-length) (next-hop-IP)`
   - Example: `ipv6 route 2001:db8:1::/64 2001:db8::1`
 
 #### 3\.3c Host Route
@@ -119,11 +119,11 @@ Static routes allow network administrators to manually specify paths for traffic
 - A host route is a route to a specific IP address, often used for precise control over traffic. (/32 for IPv4 or /128 for IPv6)
 
 - IPv4 Configuration
-  - ip route (host-IP) 255.255.255.255 (next-hop-IP)
+  - `ip route (host-IP) 255.255.255.255 (next-hop-IP)`
   - Example: `ip route 192.168.1.10 255.255.255.255 192.168.1.1`
 
 - IPv6 Configuration
-  - ipv6 route (host-IP)/128 (next-hop-IP)
+  - `ipv6 route (host-IP)/128 (next-hop-IP)`
   - Example: `ipv6 route 2001:db8:1::10/128 2001:db8::1`
 
 #### 3\.3d Floating Static 
@@ -131,11 +131,11 @@ Static routes allow network administrators to manually specify paths for traffic
 - A floating static route acts as a backup route and only takes effect if the primary route fails. This is achieved by assigning a higher administrative distance (AD) to the static route.
 
 - IPv4 Configuration
-  - ip route (destination-network) (subnet-mask) (next-hop-IP) (administrative-distance)  
+  - `ip route (destination-network) (subnet-mask) (next-hop-IP) (administrative-distance)`  
   - Example: `ip route 192.168.10.0 255.255.255.0 192.168.1.1 200`
 
 - IPv6 Configuration
-  - ipv6 route (destination-prefix) (prefix-length) (next-hop-IP) (administrative-distance)  
+  - `ipv6 route (destination-prefix) (prefix-length) (next-hop-IP) (administrative-distance)`  
   - Example: `ipv6 route 2001:db8:1::/64 2001:db8::1 200`
 
 Verifying Static Routes
@@ -165,8 +165,8 @@ Summary
 - OSPF routers establish neighbor relationships with ‘hello’ packets being communicated to each other for the purpose of exchanging routing information. Neighbor adjacency is formed when OSPF parameters (such as area ID, hello/dead timers, network type, and authentication if configured) match between routers.
 
 - Configuration Steps
-  - router ospf (process-id)
-  - network (ip-address) (wildcard-mask) area (area-id)
+  - `router ospf (process-id)`
+  - `network (ip-address) (wildcard-mask) area (area-id)`
 
 - Configuration Example
   - `router ospf 1`
