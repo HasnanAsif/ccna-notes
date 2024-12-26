@@ -1,8 +1,8 @@
-﻿**2.0 Network Access**
+﻿# **2.0 Network Access**
 
-**2.1 Configure and verify VLANs (normal range) spanning multiple switches**
+## **2.1 Configure and verify VLANs (normal range) spanning multiple switches**
 
-2\.1.a Access ports (data and voice)
+#### 2\.1.a Access ports (data and voice)
 
 - Access ports are configured to belong to a specific VLAN and are used to connect end devices like PCs or phones.
 - Voice VLANs are separate VLANs configured on access ports to carry voice traffic for IP phones.
@@ -14,12 +14,12 @@
   - No shutdown
   - Show vlan brief (verification command) 
 
-2\.1.b Default VLAN
+#### 2\.1.b Default VLAN
 
 - The default VLAN on Cisco switches is VLAN 1, which all ports belong to by default.
 - It is recommended to avoid using VLAN 1 for user or management traffic for security purposes.
 
-2\.1.c InterVLAN connectivity
+#### 2\.1.c InterVLAN connectivity
 
 - InterVLAN connectivity allows communication between devices in different VLANs by routing traffic through a Layer 3 device (like a router or Layer 3 switch).
 
@@ -45,9 +45,9 @@
 
 - Show ip route (verification command)
 
-**2.2 Configure and verify interswitch connectivity**
+## **2.2 Configure and verify interswitch connectivity**
 
-2\.2.a Trunk ports
+#### 2\.2.a Trunk ports
 
 - Trunk ports carry traffic for multiple VLANs between switches. They allow VLAN traffic to span across the network.
 
@@ -61,7 +61,7 @@
   - Show interfaces trunk
   - Show vlan brief
 
-2\.2.b 802.1Q
+#### 2\.2.b 802.1Q
 
 - 802.1Q is the VLAN tagging protocol used for trunking, allowing VLAN IDs to be identified across trunk links.
 
@@ -74,7 +74,7 @@
 
   Show interfaces trunk
 
-2\.2.c Native VLAN
+#### 2\.2.c Native VLAN
 
 - The native VLAN carries untagged traffic on a trunk link. It must match on both ends of the link to avoid traffic drops.
 
@@ -86,7 +86,7 @@
   - show interfaces trunk
   - show running-config interface GigabitEthernet0/1
 
-**2.3 Configure and verify Layer 2 discovery protocols (Cisco Discovery Protocol and LLDP)**
+## **2.3 Configure and verify Layer 2 discovery protocols (Cisco Discovery Protocol and LLDP)**
 
 - Cisco Discovery Protocol (CDP)
   - CDP is a Cisco proprietary protocol for discovering directly connected Cisco devices.
@@ -111,7 +111,7 @@
 - Verification command:
   - Show lldp neighbors
 
-**2.4 Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)**
+## **2.4 Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)**
 
 - LACP (Link Aggregation Control Protocol) is a Etherchannel that dynamically bundles multiple links into a single logical channel for redundancy and load balancing.
 
@@ -126,9 +126,9 @@
   - show etherchannel summary
   - show running-config interface port-channel 1
 
-**2.5 Interpret basic operations of Rapid PVST+ Spanning Tree Protocol**
+## **2.5 Interpret basic operations of Rapid PVST+ Spanning Tree Protocol**
 
-2\.5.a Root port, root bridge (primary/secondary), and other port names
+#### 2\.5.a Root port, root bridge (primary/secondary), and other port names
 
 - Root Port: Port on each switch closest to the root bridge.
 - Root Bridge: Switch with the lowest bridge ID, responsible for managing the spanning tree.
@@ -137,14 +137,14 @@
 - Verification command:
   - show spanning-tree
 
-2\.5.b Port states (forwarding/blocking)
+#### 2\.5.b Port states (forwarding/blocking)
 
 - Blocking: The port does not forward traffic to prevent loops.
 - Forwarding: The port actively forwards traffic.
 - Port State Transitions:
   - Blocking -> Listening -> Learning -> Forwarding
 
-2\.5.c PortFast
+#### 2\.5.c PortFast
 
 - PortFast skips the listening and learning states, enabling ports to immediately transition to forwarding for edge devices.
 
@@ -152,7 +152,7 @@
   - interface GigabitEthernet0/1
   - ` `spanning-tree portfast
 
-2\.5.d Root guard, loop guard, BPDU filter, and BPDU guard
+#### 2\.5.d Root guard, loop guard, BPDU filter, and BPDU guard
 
 - Root Guard: Prevents unauthorized switches from becoming the root bridge.
   - interface GigabitEthernet0/1
@@ -173,7 +173,7 @@
 - Verification command
   - Show spanning-tree summary
 
-**2.6 Describe Cisco Wireless Architectures and AP modes**
+## **2.6 Describe Cisco Wireless Architectures and AP modes**
 
 1\. Cisco Wireless Architectures: Define how Aps and controllers work together (centralized, distributed, cloud, or converged).
 
@@ -229,7 +229,7 @@
 - Rogue Detector Mode
   - AP scans for unauthorized devices connected to the network to detect rogue APs or clients.
 
-**2.7 Describe physical infrastructure connections of WLAN components (AP, WLC, access/trunk ports, and LAG)**
+## **2.7 Describe physical infrastructure connections of WLAN components (AP, WLC, access/trunk ports, and LAG)**
 
 Access Points (Aps)
 
@@ -343,7 +343,7 @@ Link Aggregation Group (LAG)
 | :- | :- | :- | :- |
 |**LAG**|Multiple Links|channel-group and port-channel config|Provides redundancy and load balancing.|
 
-**2.8 Describe network device management access (Telnet, SSH, HTTP, HTTPS, console, TACACS+/RADIUS, and cloud managed)**
+## **2.8 Describe network device management access (Telnet, SSH, HTTP, HTTPS, console, TACACS+/RADIUS, and cloud managed)**
 
 - Telnet
   - A protocol that allows for remote command-line management of devices over an unencrypted connection.
@@ -375,7 +375,7 @@ Link Aggregation Group (LAG)
 - Cloud-Management
   - Device management via a centralized cloud platform, such as Cisco Meraki Dashboard.
 
-**2.9 Interpret the wireless LAN GUI configuration for client connectivity, such as WLAN creation, security settings, QoS profiles, and advanced settings**
+## **2.9 Interpret the wireless LAN GUI configuration for client connectivity, such as WLAN creation, security settings, QoS profiles, and advanced settings**
 
 - When configuring a wireless LAN (WLAN) through a graphical user interface (GUI), several key components must be set up to enable client connectivity. Below is an explanation of each major element:
 
