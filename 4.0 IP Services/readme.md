@@ -103,12 +103,12 @@
 
 ## **4.4 Explain the function of SNMP in network operations** 
 
-Simple Network Management Protocol
+**Simple Network Management Protocol**
 
 - SNMP is a protocol used to monitor, manage, and configure network devices such as routers, switches, servers, and other IP-enabled devices within a network.
 - It enables administrators to collect performance data, detect faults, and adjust configurations remotely.
 
-Functions of SNMP in Network Operations
+**Functions of SNMP in Network Operations**
 
 - Network Monitoring
   - SNMP collects real-time performance data from devices
@@ -125,7 +125,7 @@ Functions of SNMP in Network Operations
 - Centralized Management
   - SNMP enables a centralized monitoring system (SNMP Manager) to interact with distributed network devices.
 
-SNMP Components
+**SNMP Components**
 
 - SNMP Manager
   - The central system that monitors and controls SNMP-enabled devices.
@@ -139,14 +139,14 @@ SNMP Components
 - SNMP Traps
   - Notifications sent from agents to managers for specific events or issues
 
-Key SNMP Commands
+**Key SNMP Commands**
 
 - `GET` : requests data from managed device
 - `GETNEXT` : requests the next piece of data
 - `SET` : modifies a value on the managed device
 - `TRAP` : sends an alert to the SNMP manager
 
-Example Use Case
+**Example Use Case**
 
 - A network admin uses an SNMP monitoring tool like SolarWinds to:
   - Monitor bandwidth usage on all switches
@@ -158,13 +158,13 @@ Example Use Case
 - Syslog (System Logging Protocol) is a standard protocol used for sending log messages from network devices (e.g., routers, switches, servers) to a centralized log server (Syslog Server).
 - It helps network administrators monitor, troubleshoot, and audit network events.
 - Syslog Facilities
-  - 0 : Kernal messages
-  - 1 : User-level messages
-  - 4 : Authorization (security) messages
-  - 5 : Syslog messages
-  - 6 : Line printer subsystem
-  - 10 : Security/authorization messages
-  - 16-23 : Local use (local0-local7)
+  - `0 : Kernal messages`
+  - `1 : User-level messages`
+  - `4 : Authorization (security) messages`
+  - `5 : Syslog messages`
+  - `6 : Line printer subsystem`
+  - `10 : Security/authorization messages`
+  - `16-23 : Local use (local0-local7)`
 
 - Syslog Severity Levels
   - `0 : Emergency`
@@ -205,15 +205,15 @@ Example Use Case
 
 ## **4.7 Explain the forwarding per-hop behavior (PHB) for QoS, such as classification, marking, queuing, congestion, policing, and shaping**
 
-- Quality of Service (QoS) is a set of mechanisms used to prioritize network traffic, ensuring optimal performance for critical applications and minimizing issues like delay, jitter, and packet loss. Per-Hop Behavior (PHB) refers to how packets are handled and forwarded at each network device (e.g., routers and switches) along their path.
+Quality of Service (QoS) is a set of mechanisms used to prioritize network traffic, ensuring optimal performance for critical applications and minimizing issues like delay, jitter, and packet loss. Per-Hop Behavior (PHB) refers to how packets are handled and forwarded at each network device (e.g., routers and switches) along their path.
 
-- Classification
+- **Classification**
   - Definition: Classifying traffic into different categories based on attributes such as IP address, protocol, port number, or application.
   - Purpose: Enables the network to identify and differentiate traffic types for further QoS treatment.
   - Example: Voice, video, and data traffic are classified into separate classes.
 
 
-- Marking
+- **Marking**
   - Definition: Adding a QoS tag or value to packets to indicate their priority level.
   - Mechanism:
     - Layer 2: IEEE 802.1Q (CoS - Class of Service)
@@ -222,7 +222,7 @@ Example Use Case
   - Example: Voice packets are marked with a high DSCP value like EF (Expedited Forwarding).
 
 
-- Queuing
+- **Queuing**
   - Definition: The process of placing packets into different queues for transmission based on their priority.
   - Purpose: Ensures that higher-priority traffic is forwarded before lower-priority traffic.
   - Types of Queuing:
@@ -232,19 +232,19 @@ Example Use Case
     - Low Latency Queuing (LLQ): Adds strict priority queuing for delay-sensitive traffic like voice.
 
 
-- Congestion Management
+- **Congestion Management**
   - Definition: Mechanisms to manage traffic when the network experiences congestion.
   - Example: Traffic is queued based on priority, ensuring critical packets are sent first while others wait.
 
 
-- Congestion Avoidance
+- **Congestion Avoidance**
   - Definition: Proactively dropping low-priority packets to avoid congestion before buffers overflow.
   - Mechanism:
   - Random Early Detection (RED): Randomly drops packets before queues are full.
   - Weighted RED (WRED): Applies RED with priority weights for different traffic types.
 
 
-- Policing
+- **Policing**
   - Definition: Enforces a traffic rate limit by dropping or remarking packets that exceed the specified bandwidth.
   - Purpose: Controls the traffic rate at the network edge to prevent over-utilization.
   - Behavior:
@@ -252,7 +252,7 @@ Example Use Case
     - Traffic may be remarked to a lower QoS level.
 
 
-- Shaping
+- **Shaping**
   - Definition: Smooths traffic flow by buffering excess traffic and sending it at a defined rate.
   - Purpose: Prevents bursts of traffic from overwhelming the network.
   - Behavior: Unlike policing, shaping delays packets instead of dropping them.
@@ -292,7 +292,7 @@ Example Use Case
 
 ## **4.9 Describe the capabilities and functions of TFTP/FTP in the network**
 
-- TFTP (Trivial File Transfer Protocol)
+**TFTP (Trivial File Transfer Protocol)**
 - Capabilities:
   - Used for basic file transfer in a network
   - Operates over UDP port 69, which makes it faster but less reliable than FTP
@@ -303,7 +303,7 @@ Example Use Case
   - Used in environments with low overhead (e.g., Cisco router booting via TFTP).
 
 
-- FTP (File Transfer Protocol)
+**FTP (File Transfer Protocol)**
 - Capabilities:
   - A full-featured protocol for transferring files.
   - Operates over TCP ports 20 (data) and 21 (control), providing reliable file transfers.
