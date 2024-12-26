@@ -123,7 +123,7 @@
 IPsec (Internet Protocol Security) is a suite of protocols used to secure communications over IP networks. It ensures confidentiality, integrity, and authentication of data through encryption.
 
 **IPsec Remote Access VPN** 
--Allows individual users (e.g., employees working remotely) to securely connect to a private network using IPsec.
+- Allows individual users (e.g., employees working remotely) to securely connect to a private network using IPsec.
 
 - How it Works:
   - Users initiate the VPN connection using a VPN client.
@@ -162,7 +162,7 @@ By using IPsec Remote Access VPNs for users and Site-to-Site VPNs for network-to
 
 ## **5.6 Configure and verify access control lists**
 
-- Access Control Lists (ACLs) are used to control and filter network traffic by permitting or denying packets based on defined rules. ACLs can be applied to router interfaces to restrict access to resources or manage traffic flow.
+Access Control Lists (ACLs) are used to control and filter network traffic by permitting or denying packets based on defined rules. ACLs can be applied to router interfaces to restrict access to resources or manage traffic flow.
 
 - Standard ACLs:
   - Filter traffic based only on the source IP address.
@@ -173,7 +173,7 @@ By using IPsec Remote Access VPNs for users and Site-to-Site VPNs for network-to
   - Applied closest to the source to minimize unnecessary traffic.
   - Number range: `100-199` (legacy) or `2000-2699` (expanded).
 
-- Standard ACL Configuration
+- **Standard ACL Configuration**
   - `access-list 10 permit 192.168.1.0 0.0.0.255`
   - `interface GigabitEthernet 0/0`
   - `ip access-group 10 in`
@@ -182,7 +182,7 @@ By using IPsec Remote Access VPNs for users and Site-to-Site VPNs for network-to
   - `permit 192.168.1.0 0.0.0.255`: Permits traffic from the 192.168.1.0/24 network.
   - `ip access-group 10 in`: Applies the ACL to inbound traffic on the interface.
 
-- Extended ACL Configuration
+- **Extended ACL Configuration**
   - `access-list 101 permit tcp 192.168.1.0 0.0.0.255 any eq 80`
   - `access-list 101 deny any any`
   - `interface GigabitEthernet 0/0`
@@ -193,7 +193,7 @@ By using IPsec Remote Access VPNs for users and Site-to-Site VPNs for network-to
   - `deny ip any any`: Denies all other traffic.
   - `ip access-group 101 out`: Applies the ACL to outbound traffic on the interface.
 
-- Named ACL Configuration
+- **Named ACL Configuration**
   - `ip access-list BLOCK\_TELNET`
   - `deny tcp any any eq 23`
   - `permit ip any any`
@@ -207,7 +207,7 @@ By using IPsec Remote Access VPNs for users and Site-to-Site VPNs for network-to
   - `permit ip any any`: Allows all other traffic.
   - `ip access-group BLOCK\_TELNET in`: Applies the ACL to inbound traffic.
 
-- Verifying ACLs
+- **Verifying ACLs**
   - `show access-lists` : shows ACL configuration
   - `show ip interface gigabitEthernet 0/0` : shows interface with ACLs applied
   - `debug ip packet` : shows traffic matched by ACL in real time (use with caution in production environments)
