@@ -9,19 +9,22 @@ Threats
   - Phishing attacks (social engineering)
   - DDoS attacks (disrupting services)
 
-- Vulnerabilities : A weakness or flaw in hardware, software, or processes that can be exploited by a threat.
+Vulnerabilities 
+- A weakness or flaw in hardware, software, or processes that can be exploited by a threat.
 - Examples:
   - Unpatched software or outdated systems
   - Misconfigured firewalls or access control lists
   - Weak passwords or lack of encryption
 
-- Exploits : The use of a vulnerability by an attacker to gain unauthorized access or cause damage.
+Exploits 
+- The use of a vulnerability by an attacker to gain unauthorized access or cause damage.
 - Examples:
   - Buffer overflow attacks to crash a system or gain control
   - SQL injection to manipulate databases
   - Zero-day exploits targeting unknown vulnerabilities
 
-- Mitigation Techniques : Strategies to reduce risks and protect systems from threats and exploits.
+Mitigation Techniques  
+- Strategies to reduce risks and protect systems from threats and exploits.
   - Patch management: Regularly updating and fixing vulnerabilities.
   - Firewalls and IPS: Filtering traffic and blocking malicious activity.
   - Encryption: Protecting sensitive data in transit and at rest.
