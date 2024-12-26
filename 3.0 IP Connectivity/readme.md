@@ -153,7 +153,7 @@ Static routes allow network administrators to manually specify paths for traffic
   - `ipv6 route (destination-prefix) (prefix-length) (next-hop-IP) (administrative-distance)`  
   - Example: `ipv6 route 2001:db8:1::/64 2001:db8::1 200`
 
-Verifying Static Routes
+**Verifying Static Routes**
 
 - Show routing Table
   - IPv4: `show ip route`
