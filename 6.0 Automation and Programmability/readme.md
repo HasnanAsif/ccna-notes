@@ -119,7 +119,7 @@ The separation of the control plane and data plane refers to the division of net
 Northbound and Southbound APIs are key components of Software-Defined Networking (SDN) architecture, enabling communication between the SDN controller, applications, and underlying devices in the data plane:
 
 **Visual Representation:**
-- [ User/Application ]  <---- **NBI** ---> [ SDN Controller ] < ---- **SBI** ----> [ Devices ]
+[ User/Application ]  <---- **NBI** ---> [ SDN Controller ] < ---- **SBI** ----> [ Devices ]
 
 1. **Northbound APIs (NBI)**
   - Purpose
