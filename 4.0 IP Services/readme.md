@@ -84,19 +84,7 @@
 |**Protocol**|**DHCP**|**DNS**|
 | :- | :- | :- |
 |**Function**|Assigns IP addresses dynamically.|Resolves domain names to IP addresses.|
-|**Scope**|Local area network (LAN).||
-
-||
-| :- |
-
-||||
-| :- | :- | :- |
-
-|Global (internet and local networks).|
-| :- |
-
-||||
-| :- | :- | :- |
+|**Scope**|Local area network (LAN).|Global (internet and local networks).|
 |**Usage**|Automates network configuration.|Simplifies access to resources.|
 |**Key Devices**|DHCP Server, DHCP Client.|DNS Server, DNS Client.|
 
