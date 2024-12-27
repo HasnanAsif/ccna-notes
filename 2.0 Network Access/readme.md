@@ -174,7 +174,7 @@
 
 ## **2.6 Describe Cisco Wireless Architectures and AP modes**
 
-1\. Cisco Wireless Architectures: Define how Aps and controllers work together (centralized, distributed, cloud, or converged).
+1\. **Cisco Wireless Architectures: Define how Aps and controllers work together (centralized, distributed, cloud, or converged).**
 
 - Centralized Architecture (Controller-Based)
   - A Wireless LAN Controller (WLC) manages multiple Access Points (APs) centrally.
@@ -196,7 +196,7 @@
   - Controllers are embedded within switches, allowing for **local management** of APs.
   - Suitable for medium-sized networks with tight integration of wired and wireless networks.
 
-2\. Access Point Modes: Determine how an AP operates (client-serving, monitoring, bridging, or analyzing).
+2\. **Access Point Modes: Determine how an AP operates (client-serving, monitoring, bridging, or analyzing).**
 
 - Local Mode
   - Default mode for lightweight APs in a centralized architecture.
@@ -286,108 +286,58 @@ Link Aggregation Group (LAG)
   - `switchport mode trunk`
   - `switchport trunk allowed vlan 10,20,30`
 
-|**Component**||||
-| :- | :- | :- | :- |
-
-||
-| :- |
-
-|||||
-| :- | :- | :- | :- |
-
-|**Connection Type**|
-| :- |
-
-|||||
-| :- | :- | :- | :- |
-
-||
-| :- |
-
-|||||
-| :- | :- | :- | :- |
-
-|**Port Configuration**|
-| :- |
-
-|||||
-| :- | :- | :- | :- |
-
-||
-| :- |
-
-|||||
-| :- | :- | :- | :- |
-
-|**Notes**|
-| :- |
-
-|||||
+|**Component**|**Connection Type**|**Port Configuration**|**Notes**|
 | :- | :- | :- | :- |
 |**Access Points**|Access Port|switchport mode access|Uses PoE for power or external power source.|
 |**WLC**|Trunk Port / LAG|switchport mode trunk|Handles multiple VLANs for wireless traffic.|
 |**Access Ports**|Single VLAN|switchport access vlan <VLAN-ID>|Used for client or AP connections.|
-|**Trunk Ports**||||
-
-||
-| :- |
-
-|||||
-| :- | :- | :- | :- |
-
-|Multiple VLANs|
-| :- |
-
-|||switchport trunk allowed vlan <VLAN-IDs>|Used for APs in FlexConnect or WLC.|
-| :- | :- | :- | :- |
+|**Trunk Ports**|Multiple VLANs|switchport trunk allowed vlan <vlan-IDs>|Used for APs in FlexConnect or WLC|
 |**LAG**|Multiple Links|channel-group and port-channel config|Provides redundancy and load balancing.|
 
 ## **2.8 Describe network device management access (Telnet, SSH, HTTP, HTTPS, console, TACACS+/RADIUS, and cloud managed)**
 
-- Telnet
+Telnet
   - A protocol that allows for remote command-line management of devices over an unencrypted connection.
   - Operates on TCP port 23
 
-- SSH (Secure Shell)
+SSH (Secure Shell)
   - A secure protocol for remote command-line management using encrypted communication.
   - Operates on TCP port 22
 
-- HTTP
+HTTP
   - A protocol for accessing the web-based interface of devices.
   - Operates on TCP port 80
 
-- HTTPS
+HTTPS
   - A secure version of HTTP that uses SSL/TLS for encrypted communication.
   - Operates on TCP port 443
 
-- Console
+Console
   - A physical connection to the device via a console port (e.g., RJ-45 or USB).
 
-- TACACS+ (Terminal Access Controller Access Control System Plus)
+TACACS+ (Terminal Access Controller Access Control System Plus)
   - A Cisco-proprietary protocol for centralized authentication, authorization, and accounting (AAA).
   - Operates on TCP port 49.
 
-- RADIUS (Remote Authentication Dial-In User Service)
+RADIUS (Remote Authentication Dial-In User Service)
   - A standards-based protocol for centralized AAA, commonly used in wireless networks.
   - Operates on UDP ports 1812 (authentication) and 1813 (accounting).
 
-- Cloud-Management
+Cloud-Management
   - Device management via a centralized cloud platform, such as Cisco Meraki Dashboard.
 
 ## **2.9 Interpret the wireless LAN GUI configuration for client connectivity, such as WLAN creation, security settings, QoS profiles, and advanced settings**
 
-- When configuring a wireless LAN (WLAN) through a graphical user interface (GUI), several key components must be set up to enable client connectivity. Below is an explanation of each major element:
+When configuring a wireless LAN (WLAN) through a graphical user interface (GUI), several key components must be set up to enable client connectivity. Below is an explanation of each major element:
 
-WLAN Creation
+**WLAN Creation**
+  - Purpose: Define a wireless network (SSID) for clients to connect to
+  - Key Steps in GUI:
+    - Provide an SSID name
+    - Assign the WLAN to a specific VLAN (if required for segmentation)
+    - Enable or disable broadcasting of the SSID
 
-- Purpose: Define a wireless network (SSID) for clients to connect to
-- Key Steps in GUI:
-  - Provide an SSID name
-  - Assign the WLAN to a specific VLAN (if required for segmentation)
-  - Enable or disable broadcasting of the SSID
-
-Security Settings
-
+**Security Settings**
 - Purpose: Configure authentication and encryption methods to secure the WLAN
 - Options in GUI:
   - Open: No authentication; used for guest networks.
@@ -397,23 +347,21 @@ Security Settings
 - Other Features
   - Configure MAC filtering to restrict access based on device MAC addresses
 
-Quality of Service (QoS) Profiles
+**Quality of Service (QoS) Profiles**
+  - Purpose: Prioritize network traffic based on the type of application (e.g., voice, video, or data).
+  - Options in GUI:
+    - Best Effort: Default QoS for standard traffic
+    - Voice: Prioritize voice traffic to ensure low latency and high reliability
+    - Video: prioritize video traffic for smoother streaming
+    - Background: Low-priority traffic like backups or updates
+  - Advanced QoS Settings: Adjust bandwidth limits or traffic shaping policies
 
-- Purpose: Prioritize network traffic based on the type of application (e.g., voice, video, or data).
-- Options in GUI:
-  - Best Effort: Default QoS for standard traffic
-  - Voice: Prioritize voice traffic to ensure low latency and high reliability
-  - Video: prioritize video traffic for smoother streaming
-  - Background: Low-priority traffic like backups or updates
-- Advanced QoS Settings: Adjust bandwidth limits or traffic shaping policies
-
-Advanced Settings
-
-- Purpose: Configure additional WLAN behaviors and optimizations
-- Options in GUI:
-  - Band Selections: Choose whether the WLAN operates on 2.4 GHz, 5GHz, or dual-band
-  - Client Load Balancing: Distribute clients evenly across Aps to prevent overloading
-  - Fast Roaming: Enable features like 802.11r for seamless handoffs between Aps
-  - Data Rate Optimization: Limit minimum data rates to improve performance by forcing clients to connect at faster speeds
-  - Broadcast/Multicast Optimization: Reduce overhead by converting multicast traffic to unicast where applicable
+**Advanced Settings**
+  - Purpose: Configure additional WLAN behaviors and optimizations
+  - Options in GUI:
+    - Band Selections: Choose whether the WLAN operates on 2.4 GHz, 5GHz, or dual-band
+    - Client Load Balancing: Distribute clients evenly across Aps to prevent overloading
+    - Fast Roaming: Enable features like 802.11r for seamless handoffs between Aps
+    - Data Rate Optimization: Limit minimum data rates to improve performance by forcing clients to connect at faster speeds
+    - Broadcast/Multicast Optimization: Reduce overhead by converting multicast traffic to unicast where applicable
 
