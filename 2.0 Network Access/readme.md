@@ -87,32 +87,32 @@
 
 ## **2.3 Configure and verify Layer 2 discovery protocols (Cisco Discovery Protocol and LLDP)**
 
-- #### Cisco Discovery Protocol (CDP)
-  - CDP is a Cisco proprietary protocol for discovering directly connected Cisco devices.
+**Cisco Discovery Protocol (CDP)**
+    - CDP is a Cisco proprietary protocol for discovering directly connected Cisco devices.
 
-- Enable/Disable CDP:
-  - `cdp run` (Globally enable CDP)
-  - `interface GigabitEthernet0/1`
-  - `cdp enable` (Enable CDP on an interface)
+  - Enable/Disable CDP:
+    - `cdp run` (Globally enable CDP)
+    - `interface GigabitEthernet0/1`
+    - `cdp enable` (Enable CDP on an interface)
 
-- Verification command:
-  - `Show cdp neighbors`
+  - Verification command:
+    - `Show cdp neighbors`
 
-- #### Link Layer Discovery Protocol (LLDP)
-  - LLDP is an open-standard protocol for discovering devices on the same Layer 2 network.
+**Link Layer Discovery Protocol (LLDP)**
+    - LLDP is an open-standard protocol for discovering devices on the same Layer 2 network.
 
-- Enable/Disable LLDP:
-  - `lldp run`  (Globally enable LLDP)
-  - `interface GigabitEthernet0/1`
-  - `lldp transmit`
-  - `lldp receive`
+  - Enable/Disable LLDP:
+    - `lldp run`  (Globally enable LLDP)
+    - `interface GigabitEthernet0/1`
+    - `lldp transmit`
+    - `lldp receive`
 
-- Verification command:
-  - `Show lldp neighbors`
+  - Verification command:
+    - `Show lldp neighbors`
 
 ## **2.4 Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)**
 
-- LACP (Link Aggregation Control Protocol) is a Etherchannel that dynamically bundles multiple links into a single logical channel for redundancy and load balancing.
+LACP (Link Aggregation Control Protocol) is a Etherchannel that dynamically bundles multiple links into a single logical channel for redundancy and load balancing.
 
 - Configuration example:
   - `interface range GigabitEthernet0/1 - 2`
@@ -230,61 +230,56 @@
 
 ## **2.7 Describe physical infrastructure connections of WLAN components (AP, WLC, access/trunk ports, and LAG)**
 
-Access Points (Aps)
+**Access Points (Aps)**
+  - Role: Aps connect wireless clients to the wired network
+  - Physical connection
+    - Typically connected to switch access ports.
+    - If using PoE (Power over Ethernet), the AP is powered directly through the Ethernet cable, eliminating the need for a separate power source.
+  - Configuration: Switchport set to access mode for the VLAN serving wireless clients
+    - `interface GigabitEthernet0/1`
+    - `switchport mode access`
+    - `switchport access vlan 10`
 
-- Role: Aps connect wireless clients to the wired network
-- Physical connection
-  - Typically connected to switch access ports.
-  - If using PoE (Power over Ethernet), the AP is powered directly through the Ethernet cable, eliminating the need for a separate power source.
-- Configuration: Switchport set to access mode for the VLAN serving wireless clients
-  - `interface GigabitEthernet0/1`
-  - `switchport mode access`
-  - `switchport access vlan 10`
+**Wireless LAN Controller (WLC)**
+  - Role: Manages APs, handles wireless traffic, and enforces policies.
+  - Physical Connection:
+    - Connected to the core or distribution switch through trunk ports.
+    - Trunking allows the WLC to handle traffic from multiple VLANs, including management, control, and user traffic VLANs.
+  - Example configuration for WLC connection:
+    - interface GigabitEthernet0/2
+    - `switchport mode trunk`
+    - `switchport trunk allowed vlan 10,20,30`
 
-Wireless LAN Controller (WLC)
+**Access Ports (APs and Clients)**
+  - Purpose: Used for single VLAN assignments.
+  - Key Points:
+    - APs: Access ports are assigned to the VLAN for wireless client traffic.
+    - Clients: Connect wirelessly to the AP, and their traffic is tagged based on the VLAN configuration of the AP.
 
-- Role: Manages APs, handles wireless traffic, and enforces policies.
-- Physical Connection:
-  - Connected to the core or distribution switch through trunk ports.
-  - Trunking allows the WLC to handle traffic from multiple VLANs, including management, control, and user traffic VLANs.
-- Example configuration for WLC connection:
-  - interface GigabitEthernet0/2
-  - `switchport mode trunk`
-  - `switchport trunk allowed vlan 10,20,30`
+**Trunk Ports (WLC and APs in FlecConnect Mode)**
+  - Purpose: Trunk ports allow traffic from multiple VLANs
+  - Use cases:
+    - WLC connections
+    - Aps in FlexConnect Mode (locally switching traffic to multiple VLANs)
+  - Example Configuration for AP in FlexConnect Mode:
+    - `interface GigabitEthernet0/3`
+    - `switchport mode trunk`
+    - `switchport trunk allowed vlan 10,20,30`
 
-Access Ports (APs and Clients)
-
-- Purpose: Used for single VLAN assignments.
-- Key Points:
-  - APs: Access ports are assigned to the VLAN for wireless client traffic.
-  - Clients: Connect wirelessly to the AP, and their traffic is tagged based on the VLAN configuration of the AP.
-
-Trunk Ports (WLC and APs in FlecConnect Mode)
-
-- Purpose: Trunk ports allow traffic from multiple VLANs
-- Use cases:
-  - WLC connections
-  - Aps in FlexConnect Mode (locally switching traffic to multiple VLANs)
-- Example Configuration for AP in FlexConnect Mode:
-  - `interface GigabitEthernet0/3`
-  - `switchport mode trunk`
-  - `switchport trunk allowed vlan 10,20,30`
-
-Link Aggregation Group (LAG)
-
-- Purpose: LAG bundles multiple physical links into a single logical connection to increase bandwidth and provide redundancy
-- Use Case:
-  - WLCs often use LAG to connect multiple Ethernet interfaces to a switch.
-  - This provides load balancing and fault tolerance for wireless traffic.
-- Configuration:
-  - Enable LAG on the WLC (this aggregates all physical WLC ports).
-  - Configure the switch with a port-channel interface.
-- Example LAG Configuration
-  - `interface range GigabitEthernet0/1 - 2`
-  - `channel-group 1 mode active`  (Enable LACP)
-  - `interface port-channel 1`
-  - `switchport mode trunk`
-  - `switchport trunk allowed vlan 10,20,30`
+**Link Aggregation Group (LAG)**
+  - Purpose: LAG bundles multiple physical links into a single logical connection to increase bandwidth and provide redundancy
+  - Use Case:
+    - WLCs often use LAG to connect multiple Ethernet interfaces to a switch.
+    - This provides load balancing and fault tolerance for wireless traffic.
+  - Configuration:
+    - Enable LAG on the WLC (this aggregates all physical WLC ports).
+    - Configure the switch with a port-channel interface.
+  - Example LAG Configuration
+    - `interface range GigabitEthernet0/1 - 2`
+    - `channel-group 1 mode active`  (Enable LACP)
+    - `interface port-channel 1`
+    - `switchport mode trunk`
+    - `switchport trunk allowed vlan 10,20,30`
 
 |**Component**|**Connection Type**|**Port Configuration**|**Notes**|
 | :- | :- | :- | :- |
