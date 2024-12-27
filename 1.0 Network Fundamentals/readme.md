@@ -99,18 +99,18 @@
 ## **1.6 Configure and verify IPv4 addressing and subnetting**
 
 - Configure example
-  - ‘Interface GigabitEthernet 0/1’
-  - ‘Ip address 192.168.1.10	 255.255.255.0’
-  - ‘no shutdown’ (ensures interface is enabled if it is administratively down)
+  - `interface GigabitEthernet 0/1`
+  - `ip address 192.168.1.10 255.255.255.0`
+  - `no shutdown` (ensures interface is enabled if it is administratively down)
 
 - Subnetting
   - Ip used in example above is a /24 with 256 total IP addresses.
   - 254 usable IP addresses from the range of 192.168.1.1 – 192.168.1.254
 
 - Verify
-  - ‘show ip interface brief’ : Displays interface status and assigned Ips.
-  - ‘Ping <IP address>’ : Tests connectivity to another host.
-  - ‘Traceroute <IP address>’ : Identifies the path packets take to the destination
+  - `show ip interface brief` : Displays interface status and assigned Ips.
+  - `ping (IP address)` : Tests connectivity to another host.
+  - `traceroute (IP address)` : Identifies the path packets take to the destination
 
 ## **1.7 Describe private IPv4 addressing**
 
@@ -127,9 +127,9 @@
 ## **1.8 Configure and verify IPv6 addressing and prefix**
 
 - Configure example
-  - ‘Interface GigabitEthernet 0/1’
-  - ‘ipv6 address 2001:db8:1::1/64
-  - ‘no shutdown’ (ensures interface is enabled if it is administratively down)
+  - `interface GigabitEthernet 0/1`
+  - `ipv6 address 2001:db8:1::1/64`
+  - `no shutdown` (ensures interface is enabled if it is administratively down)
 
 ## **1.9 Describe IPv6 address and types**
 
@@ -153,9 +153,9 @@
 
 ##  **1.10 Verify IP parameters for Client OS (Windows, Mac OS, Linux)**
 
-- Windows: Use ipconfig or ipconfig /all.
-- Mac OS: Use ifconfig, netstat -nr, or scutil --dns.
-- Linux: Use ip addr show, ip route, or check /etc/resolv.conf.
+- Windows: Use `ipconfig` or `ipconfig /all`.
+- Mac OS: Use `ifconfig`, `netstat -nr`, or `scutil --dns`.
+- Linux: Use `ip addr show`, `ip route`, or `check /etc/resolv.conf`.
 
 ##  **1.11 Describe wireless principles**
 
