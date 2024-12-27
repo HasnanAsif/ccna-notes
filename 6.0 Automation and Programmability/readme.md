@@ -261,32 +261,8 @@ Configuration management tools like Ansible and Terraform enable automated and c
 | :- | :- | :- |
 |**Primary Use Case**|Configuration management and task automation|Infrastructure provisioning and orchestration|
 |**Execution Model**|Push-based (agentless, via SSH/WinRM)|Declarative and state-based|
-|**Language**|YAML||
-
-||
-| :- |
-
-||||
-| :- | :- | :- |
-
-|HCL (HashiCorp Configuration Language)|
-| :- |
-
-||||
-| :- | :- | :- |
-|**Cloud Support**|||
-
-||
-| :- |
-
-||||
-| :- | :- | :- |
-
-|Supported|
-| :- |
-
-|||Extensive multi-cloud support|
-| :- | :- | :- |
+|**Language**|YAML|HCL (HashiCorp Configuration Language)|
+|**Cloud Support**|Supported|Extensive multi-cloud support|
 |**Idempotence**|Ensured|Ensured|
 |**Resource State Management**|No built-in state management|Tracks state in files|
 |**Learning Curve**|Easier to learn for beginners|Slightly steeper, requires understanding of state management|
