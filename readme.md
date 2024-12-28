@@ -8,7 +8,7 @@ Use the table of contents below to navigate through the topics.
 <details>
   <summary>📂 1.0 Network Fundamentals</summary>
   
-  - 1.1 [Explain the role and function of network components](./Folder1/README.md#subsection-1)
+  - 1.1 🔗 [Explain the role and function of network components](./Folder1/README.md#subsection-1)
   - 1.2 [Describe characteristics of network topology architectures](./Folder1/README.md#subsection-2)
   - 1.3 [Compare physical interface and cabling types](./Folder1/README.md#subsection-2)
   - 1.4 [Identify interface and cable issues (collisions, errors, mismatch duplex, and/or speed)](./Folder1/README.md#subsection-2)
