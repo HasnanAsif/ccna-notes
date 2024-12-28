@@ -17,9 +17,9 @@
 - Inside Local -> Inside Global -> Outside Global -> Outside Local
 
 - Example on R1 Routing table
-  - ![nat inside local](Aspose.Words.e9da0b91-94e4-47cb-a5c6-966d989dbeb8.001.png)
+  - ![nat inside local](assets/R1-Nat.png)
 - Same Example on R2 Routing Table
-  - ![nat inside global](Aspose.Words.e9da0b91-94e4-47cb-a5c6-966d989dbeb8.002.png)
+  - ![nat inside global](assets/R2-Nat.png)
 
 - There are three types of NAT, Static NAT, Dynamic NAT and PAT, These types of define how inside local IP address will be mapped with inside global IP address.
 
