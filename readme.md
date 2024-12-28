@@ -1,17 +1,13 @@
-200-301 CCNA v1.1
-
-These are my notes for the **Cisco Certified Network Associate** certification exam
-
 # CCNA 200-301 Notes
 
-Welcome! This repository contains my notes on various CCNA 200-301 v1.1 exam topics, organized into separate folders. Use the table of contents below to navigate through the topics.
+Welcome! This repository contains my notes on various CCNA 200-301 v1.1 exam topics, organized into separate folders. 
+Use the table of contents below to navigate through the topics.
 
 ## Table of Contents
 
 <details>
   <summary>📂 1.0 Network Fundamentals</summary>
   
-  - [Introduction](./1.0%20Network%20Fundamentals/readme.md/##**1.0 Network Fundamentals**)
   - 1.1 [Explain the role and function of network components](./Folder1/README.md#subsection-1)
   - 1.2 [Describe characteristics of network topology architectures](./Folder1/README.md#subsection-2)
   - 1.3 [Compare physical interface and cabling types](./Folder1/README.md#subsection-2)
