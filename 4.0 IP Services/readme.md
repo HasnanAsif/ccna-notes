@@ -17,9 +17,9 @@
 - Inside Local -> Inside Global -> Outside Global -> Outside Local
 
 - Example on R1 Routing table
-  - ![nat inside local](assets/R1-Nat.png)
+  - ![nat inside local](assets/r1-nat.png)
 - Same Example on R2 Routing Table
-  - ![nat inside global](assets/R2-Nat.png)
+  - ![nat inside global](assets/r2-nat.png)
 
 - There are three types of NAT, Static NAT, Dynamic NAT and PAT, These types of define how inside local IP address will be mapped with inside global IP address.
 

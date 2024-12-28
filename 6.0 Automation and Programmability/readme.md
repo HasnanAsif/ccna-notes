@@ -80,7 +80,7 @@ The **main differences** between traditional networks and controller-based netwo
   - Data Plane Role: Handles actual data packet forwarding.
   - Example: Cisco ACI fabric, where the underlay consists of physical hardware, and the overlay is virtualized using VXLAN.
 
-![](Aspose.Words.28e42335-1e06-493a-a03e-dba74b0a7ca7.001.jpeg)
+![](assets/sdn-planes.jpeg)
 
 Ciscos **Three Planes of Networking** (SDN):
 
