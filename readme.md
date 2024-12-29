@@ -4,6 +4,8 @@ Welcome!
 This repository contains my notes on various CCNA 200-301 v1.1 exam topics, organized into separate folders.   
 Use the table of contents below to navigate through the topics.
 
+---
+
 ## Table of Contents
 
 <details>
@@ -96,15 +98,9 @@ Use the table of contents below to navigate through the topics.
   
 
 </details>
-<!-- Repeat the above <details> block for remaining folders -->
 
 ---
-
-## How to Use
-
-1. Click the dropdowns under the **Table of Contents** to explore topics.
-2. Each folder contains a `README.md` file with detailed notes.
-3. Links in the dropdowns navigate directly to specific sections in the folder notes.
+**Note: Always review the commands before execution and test in a non-production environment to ensure compatibility**
 
 ---
 
