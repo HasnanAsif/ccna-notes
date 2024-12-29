@@ -37,7 +37,7 @@ Use the table of contents below to navigate through the topics.
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.12** [Explain virtualization fundamentals (server virtualization, containers, and VRFs)](./1.0%20Network%20Fundamentals/readme.md)  
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.13** [Describe switching concepts](#-113-describe-switching-concepts)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.13** [Describe switching concepts](./1.0%20Network%20Fundamentals/readme.md#113-describe-switching-concepts)  
 
 </details>
 
