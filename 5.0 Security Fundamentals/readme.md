@@ -118,7 +118,7 @@
   |Certificates|Digital certificates act as credentials to verify identity and access rights.|SSL certificates for web login, VPN client certs.|
   |Biometrics|Use of unique biological traits for authentication.|Fingerprint scan, facial recognition, retina scan.|
 
-## **5.5. Describe IPsec remote access and site-to-site VPNs**
+## **5.5 Describe IPsec remote access and site-to-site VPNs**
 
 IPsec (Internet Protocol Security) is a suite of protocols used to secure communications over IP networks. It ensures confidentiality, integrity, and authentication of data through encryption.
 
