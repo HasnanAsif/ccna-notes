@@ -11,7 +11,7 @@ Use the table of contents below to navigate through the topics.
 ## Table of Contents
 
 <details>
-  <summary>📂[network fundamentals icon](assets/network-fundamentals.pngimage.png) 1.0<b> Network Fundamentals</b> </summary>
+  <summary>📂![network fundamentals icon](assets/network-fundamentals.pngimage.png) 1.0<b> Network Fundamentals</b> </summary>
   
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.1** [Explain the role and function of network components](./1.0%20Network%20Fundamentals/readme.md#11-explain-the-role-and-function-of-network-components)  
 
