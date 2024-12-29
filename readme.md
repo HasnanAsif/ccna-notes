@@ -65,7 +65,7 @@ Use the table of contents below to navigate through the topics.
 </details>
 
 <details>
-  <summary>📂 3.0<b> IP Connectivity </b></summary>
+  <summary><img src="assets/ip-connectivity.png" alt="IP Connectivity Icon" width="25"/> 3.0<b> IP Connectivity </b></summary>
   
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **3.1** [Interpret the components of routing table](./3.0%20IP%20Connectivity/readme.md#31-interpret-the-components-of-routing-table) 
 
@@ -81,7 +81,7 @@ Use the table of contents below to navigate through the topics.
 </details>
 
 <details>
-  <summary>📂 4.0<b> IP Services </b></summary>
+  <summary><img src="assets/ip-services.png" alt="IP Services Icon" width="25"/> 4.0<b> IP Services </b></summary>
   
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **4.1** [Configure and verify inside source NAT using static and pools](./4.0%20IP%20Services/readme.md#41-configure-and-verify-inside-source-nat-using-static-and-pools) 
 
@@ -104,7 +104,7 @@ Use the table of contents below to navigate through the topics.
 </details>
 
 <details>
-  <summary>📂 5.0<b> Security Fundamentals </b></summary>
+  <summary><img src="assets/security-fundamentals.png" alt="Security Fundamentals Icon" width="25"/> 5.0<b> Security Fundamentals </b></summary>
   
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.1** [Define key security concepts (threats, vulnerabilities, exploits, and mitigation techniques)](./5.0%20Security%20Fundamentals/readme.md#51-define-key-security-concepts-threats-vulnerabilities-exploits-and-mitigation-techniques) 
 
@@ -129,7 +129,7 @@ Use the table of contents below to navigate through the topics.
 </details>
 
 <details>
-  <summary>📂 6.0 <b>Automation and Programmability </b></summary>
+  <summary><img src="assets/automation-and-programmability.png" alt="Network Access Icon" width="25"/> 6.0 <b>Automation and Programmability </b></summary>
   
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **6.1** [Explain how automation impacts network management](./6.0%20Automation%20and%20Programmability/readme.md#61-explain-how-automation-impacts-network-management) 
 
