@@ -9,7 +9,7 @@ Use the table of contents below to navigate through the topics.
 ## Table of Contents
 
 <details>
-  <summary>📂 <b>1.0 Network Fundamentals</b> </summary>
+  <summary>📂 1.0<b> Network Fundamentals</b> </summary>
   
   🔗 **1.1** [Explain the role and function of network components](./1.0%20Network%20Fundamentals/readme.md)  
   🔗 1.2 [Describe characteristics of network topology architectures](./1.0%20Network%20Fundamentals/readme.md)  
@@ -28,7 +28,7 @@ Use the table of contents below to navigate through the topics.
 </details>
 
 <details>
-  <summary>📂 <b>2.0 Network Access </b></summary>
+  <summary>📂 2.0<b> Network Access </b></summary>
 
   🔗 2.1 [Configure and verify VLANs (normal range) spanning multiple switches](./2.0%20Network%20Access/readme.md)  
   🔗 2.2 [Configure and verify interswitch connectivity](./2.0%20Network%20Access/readme.md)  
@@ -43,7 +43,7 @@ Use the table of contents below to navigate through the topics.
 </details>
 
 <details>
-  <summary>📂 <b>3.0 IP Connectivity </b></summary>
+  <summary>📂 3.0<b> IP Connectivity </b></summary>
   
   🔗 3.1 [Interpret the components of routing table](./3.0%20IP%20Connectivity/readme.md)  
   🔗 3.2 [Determine how a router makes a forwarding decision by default](./3.0%20IP%20Connectivity/readme.md)  
@@ -55,7 +55,7 @@ Use the table of contents below to navigate through the topics.
 </details>
 
 <details>
-  <summary>📂 <b>4.0 IP Services </b></summary>
+  <summary>📂 4.0<b> IP Services </b></summary>
   
   🔗 4.1 [Configure and verify inside source NAT using static and pools](./4.0%20IP%20Services/readme.md)  
   🔗 4.2 [Configure and verify NTP operating in a client and server mode](./4.0%20IP%20Services/readme.md)  
@@ -70,7 +70,7 @@ Use the table of contents below to navigate through the topics.
 </details>
 
 <details>
-  <summary>📂 <b>5.0 Security Fundamentals </b></summary>
+  <summary>📂 5.0<b> Security Fundamentals </b></summary>
   
   🔗 5.1 [Define key security concepts (threats, vulnerabilities, exploits, and mitigation techniques)](./5.0%20Security%20Fundamentals/readme.md)  
   🔗 5.2 [Describe security program elements (user awareness, training, and physical access control)](./5.0%20Security%20Fundamentals/readme.md)  
