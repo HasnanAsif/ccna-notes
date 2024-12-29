@@ -9,7 +9,7 @@ Use the table of contents below to navigate through the topics.
 ## Table of Contents
 
 <details>
-  <summary>📂 <b>1.0 Network Fundamentals</b> 1.0 Network Fundamentals</summary>
+  <summary>📂 <b>1.0 Network Fundamentals</b> </summary>
   
   🔗 **1.1** [Explain the role and function of network components](./1.0%20Network%20Fundamentals/readme.md)  
   🔗 1.2 [Describe characteristics of network topology architectures](./1.0%20Network%20Fundamentals/readme.md)  
@@ -28,7 +28,7 @@ Use the table of contents below to navigate through the topics.
 </details>
 
 <details>
-  <summary>📂 2.0 Network Access</summary>
+  <summary>📂 <b>2.0 Network Access </b></summary>
 
   🔗 2.1 [Configure and verify VLANs (normal range) spanning multiple switches](./2.0%20Network%20Access/readme.md)  
   🔗 2.2 [Configure and verify interswitch connectivity](./2.0%20Network%20Access/readme.md)  
@@ -43,7 +43,7 @@ Use the table of contents below to navigate through the topics.
 </details>
 
 <details>
-  <summary>📂 3.0 IP Connectivity</summary>
+  <summary>📂 <b>3.0 IP Connectivity </b></summary>
   
   🔗 3.1 [Interpret the components of routing table](./3.0%20IP%20Connectivity/readme.md)  
   🔗 3.2 [Determine how a router makes a forwarding decision by default](./3.0%20IP%20Connectivity/readme.md)  
@@ -55,7 +55,7 @@ Use the table of contents below to navigate through the topics.
 </details>
 
 <details>
-  <summary>📂 4.0 IP Services</summary>
+  <summary>📂 <b>4.0 IP Services </b></summary>
   
   🔗 4.1 [Configure and verify inside source NAT using static and pools](./4.0%20IP%20Services/readme.md)  
   🔗 4.2 [Configure and verify NTP operating in a client and server mode](./4.0%20IP%20Services/readme.md)  
@@ -70,7 +70,7 @@ Use the table of contents below to navigate through the topics.
 </details>
 
 <details>
-  <summary>📂 5.0 Security Fundamentals</summary>
+  <summary>📂 <b>5.0 Security Fundamentals </b></summary>
   
   🔗 5.1 [Define key security concepts (threats, vulnerabilities, exploits, and mitigation techniques)](./5.0%20Security%20Fundamentals/readme.md)  
   🔗 5.2 [Describe security program elements (user awareness, training, and physical access control)](./5.0%20Security%20Fundamentals/readme.md)  
@@ -86,7 +86,7 @@ Use the table of contents below to navigate through the topics.
 </details>
 
 <details>
-  <summary>📂 6.0 Automation and Programmability</summary>
+  <summary>📂 6.0 <b>Automation and Programmability </b></summary>
   
   🔗 6.1 [Explain how automation impacts network management](./6.0%20Automation%20and%20Programmability/readme.md)  
   🔗 6.2 [Compare traditional networks with controller-based networking](./6.0%20Automation%20and%20Programmability/readme.md)  
