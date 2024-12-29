@@ -106,29 +106,44 @@ Use the table of contents below to navigate through the topics.
 <details>
   <summary>📂 5.0<b> Security Fundamentals </b></summary>
   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.1** [Define key security concepts (threats, vulnerabilities, exploits, and mitigation techniques)](./5.0%20Security%20Fundamentals/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.2** [Describe security program elements (user awareness, training, and physical access control)](./5.0%20Security%20Fundamentals/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.3** [Configure and verify device access control using local passwords](./5.0%20Security%20Fundamentals/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.4** [Describe security password policies elements, such as management, complexity, and password alternatives (multifactor authentication, certificates, and biometrics)](./5.0%20Security%20Fundamentals/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.5** [Describe IPsec remote access and site-to-site VPNs](./5.0%20Security%20Fundamentals/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.6** [Configure and verify access control lists](./5.0%20Security%20Fundamentals/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.7** [Configure and verify Layer 2 security features (DHCP snooping, dynamic ARP inspection, and port security)](./5.0%20Security%20Fundamentals/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.8** [Compare authentication, authorization, and accounting concepts](./5.0%20Security%20Fundamentals/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.9** [Describe wireless security protocols (WPA, WPA2, and WPA3)](./5.0%20Security%20Fundamentals/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.10** [Configure and verify WLAN within the GUI using WPA2 PSK](./5.0%20Security%20Fundamentals/readme.md)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.1** [Define key security concepts (threats, vulnerabilities, exploits, and mitigation techniques)](./5.0%20Security%20Fundamentals/readme.md#51-define-key-security-concepts-threats-vulnerabilities-exploits-and-mitigation-techniques) 
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.2** [Describe security program elements (user awareness, training, and physical access control)](./5.0%20Security%20Fundamentals/readme.md#52-describe-security-program-elements-user-awareness-training-and-physical-access-control) 
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.3** [Configure and verify device access control using local passwords](./5.0%20Security%20Fundamentals/readme.md#53-configure-and-verify-device-access-control-using-local-passwords)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.4** [Describe security password policies elements, such as management, complexity, and password alternatives (multifactor authentication, certificates, and biometrics)](./5.0%20Security%20Fundamentals/readme.md#54-describe-security-password-policies-elements-such-as-management-complexity-and-password-alternatives-multifactor-authentication-certificates-and-biometrics) 
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.5** [Describe IPsec remote access and site-to-site VPNs](./5.0%20Security%20Fundamentals/readme.md#55-describe-ipsec-remote-access-and-site-to-site-vpns)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.6** [Configure and verify access control lists](./5.0%20Security%20Fundamentals/readme.md#56-configure-and-verify-access-control-lists)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.7** [Configure and verify Layer 2 security features (DHCP snooping, dynamic ARP inspection, and port security)](./5.0%20Security%20Fundamentals/readme.md#57-configure-and-verify-layer-2-security-features-dhcp-snooping-dynamic-arp-inspection-and-port-security)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.8** [Compare authentication, authorization, and accounting concepts](./5.0%20Security%20Fundamentals/readme.md#58-compare-authentication-authorization-and-accounting-concepts)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.9** [Describe wireless security protocols (WPA, WPA2, and WPA3)](./5.0%20Security%20Fundamentals/readme.md#59-describe-wireless-security-protocols-wpa-wpa2-and-wpa3)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **5.10** [Configure and verify WLAN within the GUI using WPA2 PSK](./5.0%20Security%20Fundamentals/readme.md#510-configure-and-verify-wlan-within-the-gui-using-wpa2-psk)  
 
 </details>
 
 <details>
   <summary>📂 6.0 <b>Automation and Programmability </b></summary>
   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **6.1** [Explain how automation impacts network management](./6.0%20Automation%20and%20Programmability/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **6.2** [Compare traditional networks with controller-based networking](./6.0%20Automation%20and%20Programmability/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **6.3** [Describe controller-based, software defined architecture (overlay, underlay, and fabric)](./6.0%20Automation%20and%20Programmability/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **6.4** [Explain AI (generative and predictive) and machine learning in network operations](./6.0%20Automation%20and%20Programmability/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **6.5** [Describe characteristics of REST-based APIs (authentication types, CRUD, HTTP verbs, and data encoding)](./6.0%20Automation%20and%20Programmability/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **6.6** [Recognize the capabilities of configuration management mechanisms, such as Ansible and Terraform](./6.0%20Automation%20and%20Programmability/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **6.7** [Recognize components of JSON-encoded data](./6.0%20Automation%20and%20Programmability/readme.md)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **6.1** [Explain how automation impacts network management](./6.0%20Automation%20and%20Programmability/readme.md#61-explain-how-automation-impacts-network-management) 
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **6.2** [Compare traditional networks with controller-based networking](./6.0%20Automation%20and%20Programmability/readme.md#62-compare-traditional-networks-with-controller-based-networking)
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **6.3** [Describe controller-based, software defined architecture (overlay, underlay, and fabric)](./6.0%20Automation%20and%20Programmability/readme.md#63-describe-controller-based-software-defined-architecture-overlay-underlay-and-fabric) 
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **6.4** [Explain AI (generative and predictive) and machine learning in network operations](./6.0%20Automation%20and%20Programmability/readme.md#64-explain-ai-generative-and-predictive-and-machine-learning-in-network-operations)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **6.5** [Describe characteristics of REST-based APIs (authentication types, CRUD, HTTP verbs, and data encoding)](./6.0%20Automation%20and%20Programmability/readme.md#65-describe-characteristics-of-rest-based-apis-authentication-types-crud-http-verbs-and-data-encoding)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **6.6** [Recognize the capabilities of configuration management mechanisms, such as Ansible and Terraform](./6.0%20Automation%20and%20Programmability/readme.md#66-recognize-the-capabilities-of-configuration-management-mechanisms-such-as-ansible-and-terraform)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **6.7** [Recognize components of JSON-encoded data](./6.0%20Automation%20and%20Programmability/readme.md#67-recognize-components-of-json-encoded-data)  
   
 
 </details>
