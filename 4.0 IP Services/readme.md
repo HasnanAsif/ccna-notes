@@ -278,7 +278,7 @@ Quality of Service (QoS) is a set of mechanisms used to prioritize network traff
 - Show SSH Sessions on Device
   - `show ssh`
 
-## **4.9 Describe the capabilities and functions of TFTP/FTP in the network**
+## **4.9 Describe the capabilities and functions of TFTP and FTP in the network**
 
 **TFTP (Trivial File Transfer Protocol)**
 - Capabilities:

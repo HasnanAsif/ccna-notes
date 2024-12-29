@@ -67,7 +67,7 @@ Use the table of contents below to navigate through the topics.
 <details>
   <summary>📂 3.0<b> IP Connectivity </b></summary>
   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **3.1** [Interpret the components of routing table](./3.0%20IP%20Connectivity/readme.md31-interpret-the-components-of-routing-table) 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **3.1** [Interpret the components of routing table](./3.0%20IP%20Connectivity/readme.md#31-interpret-the-components-of-routing-table) 
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **3.2** [Determine how a router makes a forwarding decision by default](./3.0%20IP%20Connectivity/readme.md#32-determine-how-a-router-makes-a-forwarding-decision-by-default)  
 
@@ -83,15 +83,23 @@ Use the table of contents below to navigate through the topics.
 <details>
   <summary>📂 4.0<b> IP Services </b></summary>
   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **4.1** [Configure and verify inside source NAT using static and pools](./4.0%20IP%20Services/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **4.2** [Configure and verify NTP operating in a client and server mode](./4.0%20IP%20Services/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **4.3** [Explain the role of DHCP and DNS within the network](./4.0%20IP%20Services/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **4.4** [Explain the function of SNMP in network operations](./4.0%20IP%20Services/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **4.5** [Describe the use of syslog features including facilities and levels](./4.0%20IP%20Services/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **4.6** [Configure and verify DHCP client and relay](./4.0%20IP%20Services/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **4.7** [Explain the forwarding per-hop behavior (PHB) for QoS, such as classification, marking, queuing, congestion, policing, and shaping](./4.0%20IP%20Services/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **4.8** [Configure network devices for remote access using SSH](./4.0%20IP%20Services/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **4.9** [Describe the capabilities and functions of TFTP/FTP in the network](./4.0%20IP%20Services/readme.md)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **4.1** [Configure and verify inside source NAT using static and pools](./4.0%20IP%20Services/readme.md#41-configure-and-verify-inside-source-nat-using-static-and-pools) 
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **4.2** [Configure and verify NTP operating in a client and server mode](./4.0%20IP%20Services/readme.md#42-configure-and-verify-ntp-operating-in-a-client-and-server-mode)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **4.3** [Explain the role of DHCP and DNS within the network](./4.0%20IP%20Services/readme.md#43-explain-the-role-of-dhcp-and-dns-within-the-network)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **4.4** [Explain the function of SNMP in network operations](./4.0%20IP%20Services/readme.md#44-explain-the-function-of-snmp-in-network-operations)
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **4.5** [Describe the use of syslog features including facilities and levels](./4.0%20IP%20Services/readme.md#45-describe-the-use-of-syslog-features-including-facilities-and-levels)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **4.6** [Configure and verify DHCP client and relay](./4.0%20IP%20Services/readme.md#46-configure-and-verify-dhcp-client-and-relay)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **4.7** [Explain the forwarding per-hop behavior (PHB) for QoS, such as classification, marking, queuing, congestion, policing, and shaping](./4.0%20IP%20Services/readme.md#47-explain-the-forwarding-per-hop-behavior-phb-for-qos-such-as-classification-marking-queuing-congestion-policing-and-shaping)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **4.8** [Configure network devices for remote access using SSH](./4.0%20IP%20Services/readme.md#48-configure-network-devices-for-remote-access-using-ssh)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **4.9** [Describe the capabilities and functions of TFTP/FTP in the network](./4.0%20IP%20Services/readme.md#49-describe-the-capabilities-and-functions-of-tftp-and-ftp-in-the-network)  
 
 </details>
 
