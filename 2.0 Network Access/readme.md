@@ -110,7 +110,7 @@
   - Verification command:
     - `Show lldp neighbors`
 
-## **2.4 Configure and verify (Layer 2 & Layer 3) EtherChannel (LACP)**
+## **2.4 Configure and verify (Layer 2 and Layer 3) EtherChannel (LACP)**
 
 LACP (Link Aggregation Control Protocol) is a Etherchannel that dynamically bundles multiple links into a single logical channel for redundancy and load balancing.
 

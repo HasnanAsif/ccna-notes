@@ -50,7 +50,7 @@ Use the table of contents below to navigate through the topics.
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.3** [Configure and verify Layer 2 discovery protocols (Cisco Discovery Protocol and LLDP)](./2.0%20Network%20Access/readme.md#23-configure-and-verify-layer-2-discovery-protocols-cisco-discovery-protocol-and-lldp)  
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.4** [Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)](./2.0%20Network%20Access/readme.md#24-configure-and-verify-layer-2-&-layer-3-etherchannel-lacp) 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.4** [Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)](./2.0%20Network%20Access/readme.md#24-configure-and-verify-layer-2-and-layer-3-etherchannel-lacp) 
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.5** [Interpret basic operations of Rapid PVST+ Spanning Tree Protocol](./2.0%20Network%20Access/readme.md#25-interpret-basic-operations-of-rapid-pvst-spanning-tree-protocol) 
 
