@@ -228,7 +228,7 @@ LACP (Link Aggregation Control Protocol) is a Etherchannel that dynamically bund
 - Rogue Detector Mode
   - AP scans for unauthorized devices connected to the network to detect rogue APs or clients.
 
-## **2.7 Describe physical infrastructure connections of WLAN components (AP, WLC, access & trunk ports, and LAG)**
+## **2.7 Describe physical infrastructure connections of WLAN components (AP, WLC, access and trunk ports, and LAG)**
 
 **Access Points (Aps)**
   - Role: Aps connect wireless clients to the wired network
@@ -289,7 +289,7 @@ LACP (Link Aggregation Control Protocol) is a Etherchannel that dynamically bund
 |**Trunk Ports**|Multiple VLANs|switchport trunk allowed vlan <vlan-IDs>|Used for APs in FlexConnect or WLC|
 |**LAG**|Multiple Links|channel-group and port-channel config|Provides redundancy and load balancing.|
 
-## **2.8 Describe network device management access (Telnet, SSH, HTTP, HTTPS, console, TACACS+/RADIUS, and cloud managed)**
+## **2.8 Describe network device management access (Telnet, SSH, HTTP, HTTPS, console, TACACS+, RADIUS, and cloud managed)**
 
 Telnet
   - A protocol that allows for remote command-line management of devices over an unencrypted connection.

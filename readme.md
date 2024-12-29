@@ -56,7 +56,7 @@ Use the table of contents below to navigate through the topics.
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.6** [Describe Cisco Wireless Architectures and AP modes](./2.0%20Network%20Access/readme.md#26-describe-cisco-wireless-architectures-and-ap-modes)  
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.7** [Describe physical infrastructure connections of WLAN components (AP, WLC, access/trunk ports, and LAG)](./2.0%20Network%20Access/readme.md#27-describe-physical-infrastructure-connections-of-wlan-components-ap-wlc-access-trunk-ports-and-lag) 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.7** [Describe physical infrastructure connections of WLAN components (AP, WLC, access/trunk ports, and LAG)](./2.0%20Network%20Access/readme.md#27-describe-physical-infrastructure-connections-of-wlan-components-ap-wlc-access-and-trunk-ports-and-lag) 
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 2.8 [Describe network device management access (Telnet, SSH, HTTP, HTTPS, console, TACACS+/RADIUS, and cloud managed)](./2.0%20Network%20Access/readme.md#28-describe-network-device-management-access-telnet-ssh-http-https-console-tacacs-radius-and-cloud-managed)  
 
