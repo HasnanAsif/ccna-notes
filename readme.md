@@ -42,7 +42,7 @@ Use the table of contents below to navigate through the topics.
 </details>
 
 <details>
-  <summary> 2.0<b> Network Access </b> <img src="assets/network-access.png" alt="Network Access Icon" width="25"/></summary>
+  <summary> 📂 2.0<b> Network Access </b> <img src="assets/network-access.png" alt="Network Access Icon" width="25"/></summary>
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="assets/network-access.png" alt="Network Access Icon" width="25"/> **2.1** [Configure and verify VLANs (normal range) spanning multiple switches](./2.0%20Network%20Access/readme.md#21-configure-and-verify-vlans-normal-range-spanning-multiple-switches)
 
