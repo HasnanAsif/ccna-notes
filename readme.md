@@ -1,7 +1,9 @@
 # CCNA 200-301 Notes
 
 Welcome!   
-This repository contains **my notes** on various **CCNA 200-301 v1.1** exam topics, organized into separate folders.   
+<br>
+This repository contains **my notes** on various **CCNA 200-301 v1.1** exam topics, organized into separate folders.
+<br>   
 Use the table of contents below to navigate through the topics.
 
 ---
