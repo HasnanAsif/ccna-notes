@@ -44,15 +44,23 @@ Use the table of contents below to navigate through the topics.
 <details>
   <summary>📂 2.0<b> Network Access </b></summary>
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.1** [Configure and verify VLANs (normal range) spanning multiple switches](./2.0%20Network%20Access/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.2** [Configure and verify interswitch connectivity](./2.0%20Network%20Access/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.3** [Configure and verify Layer 2 discovery protocols (Cisco Discovery Protocol and LLDP)](./2.0%20Network%20Access/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.4** [Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)](./2.0%20Network%20Access/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.5** [Interpret basic operations of Rapid PVST+ Spanning Tree Protocol](./2.0%20Network%20Access/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.6** [Describe Cisco Wireless Architectures and AP modes](./2.0%20Network%20Access/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.7** [Describe physical infrastructure connections of WLAN components (AP, WLC, access/trunk ports, and LAG)](./2.0%20Network%20Access/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 2.8 [Describe network device management access (Telnet, SSH, HTTP, HTTPS, console, TACACS+/RADIUS, and cloud managed)](./2.0%20Network%20Access/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 2.9 [Interpret the wireless LAN GUI configuration for client connectivity, such as WLAN creation, security settings, QoS profiles, and advanced settings](./2.0%20Network%20Access/readme.md)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.1** [Configure and verify VLANs (normal range) spanning multiple switches](./2.0%20Network%20Access/readme.md#21-configure-and-verify-vlans-normal-range-spanning-multiple-switches)
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.2** [Configure and verify interswitch connectivity](./2.0%20Network%20Access/readme.md#22-configure-and-verify-interswitch-connectivity)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.3** [Configure and verify Layer 2 discovery protocols (Cisco Discovery Protocol and LLDP)](./2.0%20Network%20Access/readme.md#23-configure-and-verify-layer-2-discovery-protocols-cisco-discovery-protocol-and-lldp)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.4** [Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)](./2.0%20Network%20Access/readme.md#24-configure-and-verify-layer-2-layer-3-etherchannel-lacp) 
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.5** [Interpret basic operations of Rapid PVST+ Spanning Tree Protocol](./2.0%20Network%20Access/readme.md#25-interpret-basic-operations-of-rapid-pvst-spanning-tree-protocol) 
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.6** [Describe Cisco Wireless Architectures and AP modes](./2.0%20Network%20Access/readme.md#26-describe-cisco-wireless-architectures-and-ap-modes)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.7** [Describe physical infrastructure connections of WLAN components (AP, WLC, access/trunk ports, and LAG)](./2.0%20Network%20Access/readme.md#27-describe-physical-infrastructure-connections-of-wlan-components-ap-wlc-access-trunk-ports-and-lag) 
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 2.8 [Describe network device management access (Telnet, SSH, HTTP, HTTPS, console, TACACS+/RADIUS, and cloud managed)](./2.0%20Network%20Access/readme.md#28-describe-network-device-management-access-telnet-ssh-http-https-console-tacacs-radius-and-cloud-managed)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 2.9 [Interpret the wireless LAN GUI configuration for client connectivity, such as WLAN creation, security settings, QoS profiles, and advanced settings](./2.0%20Network%20Access/readme.md#29-interpret-the-wireless-lan-gui-configuration-for-client-connectivity-such-as-wlan-creation-security-settings-qos-profiles-and-advanced-settings)  
 
 </details>
 
