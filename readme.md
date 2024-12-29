@@ -13,29 +13,29 @@ Use the table of contents below to navigate through the topics.
 <details>
   <summary>📂 1.0<b> Network Fundamentals</b> </summary>
   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.1** [Explain the role and function of network components](./1.0%20Network%20Fundamentals/readme.md#-11-explain-the-role-and-function-of-network-components)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.1** [Explain the role and function of network components](./1.0%20Network%20Fundamentals/readme.md#11-explain-the-role-and-function-of-network-components)  
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.2** [Describe characteristics of network topology architectures](./1.0%20Network%20Fundamentals/readme.md)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.2** [Describe characteristics of network topology architectures](./1.0%20Network%20Fundamentals/readme.md#12-describe-characteristics-of-network-topology-architectures )  
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.3** [Compare physical interface and cabling types](./1.0%20Network%20Fundamentals/readme.md)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.3** [Compare physical interface and cabling types](./1.0%20Network%20Fundamentals/readme.md#13-compare-physical-interface-and-cabling-types)  
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.4** [Identify interface and cable issues (collisions, errors, mismatch duplex, and/or speed)](./1.0%20Network%20Fundamentals/readme.md)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.4** [Identify interface and cable issues (collisions, errors, mismatch duplex, and/or speed)](./1.0%20Network%20Fundamentals/readme.md#14-identify-interface-and-cable-issues-collisions-errors-mismatch-duplex-andor-speed  )  
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.5** [Compare TCP to UDP](./1.0%20Network%20Fundamentals/readme.md)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.5** [Compare TCP to UDP](./1.0%20Network%20Fundamentals/readme.md#15-compare-tcp-to-udp )  
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.6** [Configure and verify IPv4 addressing and subnetting](./1.0%20Network%20Fundamentals/readme.md)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.6** [Configure and verify IPv4 addressing and subnetting](./1.0%20Network%20Fundamentals/readme.md#16-configure-and-verify-ipv4-addressing-and-subnetting)  
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.7** [Describe private IPv4 addressing](./1.0%20Network%20Fundamentals/readme.md)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.7** [Describe private IPv4 addressing](./1.0%20Network%20Fundamentals/readme.md#17-describe-private-ipv4-addressing)  
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.8** [Configure and verify IPv6 addressing and prefix](./1.0%20Network%20Fundamentals/readme.md)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.8** [Configure and verify IPv6 addressing and prefix](./1.0%20Network%20Fundamentals/readme.md#18-configure-and-verify-ipv6-addressing-and-prefix)  
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.9** [Describe IPv6 address types](./1.0%20Network%20Fundamentals/readme.md)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.9** [Describe IPv6 address types](./1.0%20Network%20Fundamentals/readme.md#19-describe-ipv6-address-and-types)  
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.10** [Verify IP parameters for Client OS (Windows, Mac OS, Linux)](./1.0%20Network%20Fundamentals/readme.md)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.10** [Verify IP parameters for Client OS (Windows, Mac OS, Linux)](./1.0%20Network%20Fundamentals/readme.md#110-verify-ip-parameters-for-client-os-windows-mac-os-linux)  
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.11** [Describe wireless principles](./1.0%20Network%20Fundamentals/readme.md)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.11** [Describe wireless principles](./1.0%20Network%20Fundamentals/readme.md#111-describe-wireless-principles)  
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.12** [Explain virtualization fundamentals (server virtualization, containers, and VRFs)](./1.0%20Network%20Fundamentals/readme.md)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.12** [Explain virtualization fundamentals (server virtualization, containers, and VRFs)](./1.0%20Network%20Fundamentals/readme.md#112-explain-virtualization-fundamentals-server-virtualization-containers-and-vrfs)  
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.13** [Describe switching concepts](./1.0%20Network%20Fundamentals/readme.md#113-describe-switching-concepts)  
 
