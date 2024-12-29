@@ -11,7 +11,7 @@ Use the table of contents below to navigate through the topics.
 ## Table of Contents
 
 <details>
-  <summary> <img src="assets/network-fundamentals.png" alt="Icon" width="30"/> 📂 1.0<b> Network Fundamentals</b> </summary>
+  <summary> <img src="assets/network-fundamentals.png" alt="Network Fundamentals Icon" width="25"/> 📂 1.0<b> Network Fundamentals</b> </summary>
   
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **1.1** [Explain the role and function of network components](./1.0%20Network%20Fundamentals/readme.md#11-explain-the-role-and-function-of-network-components)  
 
@@ -42,7 +42,7 @@ Use the table of contents below to navigate through the topics.
 </details>
 
 <details>
-  <summary><img src="assets/network-fundamentals.png" alt="Icon" width="30"/> 📂 2.0<b> Network Access </b></summary>
+  <summary><img src="assets/network-access.png" alt="Icon" width="25"/> 📂 2.0<b> Network Access </b></summary>
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **2.1** [Configure and verify VLANs (normal range) spanning multiple switches](./2.0%20Network%20Access/readme.md#21-configure-and-verify-vlans-normal-range-spanning-multiple-switches)
 
