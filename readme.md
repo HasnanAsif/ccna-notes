@@ -67,11 +67,15 @@ Use the table of contents below to navigate through the topics.
 <details>
   <summary>📂 3.0<b> IP Connectivity </b></summary>
   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **3.1** [Interpret the components of routing table](./3.0%20IP%20Connectivity/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **3.2** [Determine how a router makes a forwarding decision by default](./3.0%20IP%20Connectivity/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **3.3** [Configure and verify IPv4 and IPv6 static routing](./3.0%20IP%20Connectivity/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **3.4** [Configure and verify single area OSPFv2](./3.0%20IP%20Connectivity/readme.md)  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **3.5** [Describe the purpose, functions, and concepts of first hop redundancy protocols](./3.0%20IP%20Connectivity/readme.md)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **3.1** [Interpret the components of routing table](./3.0%20IP%20Connectivity/readme.md31-interpret-the-components-of-routing-table) 
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **3.2** [Determine how a router makes a forwarding decision by default](./3.0%20IP%20Connectivity/readme.md#32-determine-how-a-router-makes-a-forwarding-decision-by-default)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **3.3** [Configure and verify IPv4 and IPv6 static routing](./3.0%20IP%20Connectivity/readme.md#33-configure-and-verify-ipv4-and-ipv6-static-routing)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **3.4** [Configure and verify single area OSPFv2](./3.0%20IP%20Connectivity/readme.md#34-configure-and-verify-single-area-ospfv2)  
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔗 **3.5** [Describe the purpose, functions, and concepts of first hop redundancy protocols](./3.0%20IP%20Connectivity/readme.md#35-describe-the-purpose-functions-and-concepts-of-first-hop-redundancy-protocols)  
   
 
 </details>
