@@ -110,7 +110,7 @@
   - Verification command:
     - `Show lldp neighbors`
 
-## **2.4 Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)**
+## **2.4 Configure and verify (Layer 2 / Layer 3) EtherChannel (LACP)**
 
 LACP (Link Aggregation Control Protocol) is a Etherchannel that dynamically bundles multiple links into a single logical channel for redundancy and load balancing.
 
@@ -228,7 +228,7 @@ LACP (Link Aggregation Control Protocol) is a Etherchannel that dynamically bund
 - Rogue Detector Mode
   - AP scans for unauthorized devices connected to the network to detect rogue APs or clients.
 
-## **2.7 Describe physical infrastructure connections of WLAN components (AP, WLC, access/trunk ports, and LAG)**
+## **2.7 Describe physical infrastructure connections of WLAN components (AP, WLC, access / trunk ports, and LAG)**
 
 **Access Points (Aps)**
   - Role: Aps connect wireless clients to the wired network
