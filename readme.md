@@ -9,7 +9,7 @@ Use the table of contents below to navigate through the topics.
 ## Table of Contents
 
 <details>
-  <summary>📂 1.0 Network Fundamentals</summary>
+  <summary>📂 <b>1.0 Network Fundamentals</b> 1.0 Network Fundamentals</summary>
   
   🔗 **1.1** [Explain the role and function of network components](./1.0%20Network%20Fundamentals/readme.md)  
   🔗 1.2 [Describe characteristics of network topology architectures](./1.0%20Network%20Fundamentals/readme.md)  
