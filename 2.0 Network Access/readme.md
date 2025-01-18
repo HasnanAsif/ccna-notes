@@ -112,34 +112,43 @@
 
 ## **2.4 Configure and verify (Layer 2 and Layer 3) EtherChannel (LACP)**
 
-LACP (Link Aggregation Control Protocol) is a Etherchannel that dynamically bundles multiple links into a single logical channel for redundancy and load balancing.
+EtherChannel is a technology that allows you to bundle multiple physical Ethernet links into a single logical link, providing increased bandwidth and redundancy.
 
-- Configuration example:
-  - `interface range GigabitEthernet0/1 - 2`
-  - `channel-group 1 mode active`  ( Enable LACP (active mode) )
-  - `interface port-channel 1`
+There are two types of EtherChannel protocols:
+  - Link Aggregation Control Protocol (LACP)
+  - Port Aggregation Protocol (PAgP) *cisco proprietary*
+
+- LACP configuration example:
+  - `interface GigabitEthernet 0/1`
   - `switchport mode trunk`
-  - `switchport trunk allowed vlan 10,20,30`
+  - `channel-group 1 mode active`  ( Enable LACP (active mode) )
+
+- channel-group modes
+  - `active` : Enable LACP unconditionally
+  - `passive` : Enable LACP if a LACP device is detected
+  - `auto` : Enable PAgP only if a PAgP device is detected
+  - `desirable` : Enable LACP unconditionally
+  - `on` : Enable Etherchannel only
 
 - Verification commands:
-  - `show etherchannel summary`
-  - `show running-config interface port-channel 1`
+  - `show interfaces port-channel 1 status`
+  - `show interfaces port-channel 1 etherchannel`
 
 ## **2.5 Interpret basic operations of Rapid PVST+ Spanning Tree Protocol**
 
 #### 2\.5.a Root port, root bridge (primary/secondary), and other port names
 
-- Root Port: Port on each switch closest to the root bridge.
-- Root Bridge: Switch with the lowest bridge ID, responsible for managing the spanning tree.
-- Designated Port: Port forwarding traffic towards a specific segment.
-- Alternate Port: Backup port to prevent loops.
+- Root Port: The root port is the port on a non-root switch that provides the lowest-cost path to the root bridge (the switch with the lowest bridge ID).
+- Root Bridge: The root bridge (also known as the primary root) is the switch with the lowest bridge ID, which serves as the reference point for the entire network. A secondary root bridge can be designated in the event of a failure of the primary root bridge.
+- Designated Port: Provide a path to the root bridge for a particular segment
+- Alternate Port: Provide a backup path in the event that the designated port fails.
 - Verification command:
   - `show spanning-tree`
 
 #### 2\.5.b Port states (forwarding/blocking)
 
-- Blocking: The port does not forward traffic to prevent loops.
-- Forwarding: The port actively forwards traffic.
+- Blocking: A blocking port is a port that is inactive and not forwarding traffic. It is used to prevent loops in the network.
+- Forwarding: A forwarding port is a port that is active and forwarding traffic in the network.
 - Port State Transitions:
   - Blocking -> Listening -> Learning -> Forwarding
 
