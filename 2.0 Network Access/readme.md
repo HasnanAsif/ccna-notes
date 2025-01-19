@@ -191,7 +191,7 @@ EtherChannel is a technology that allows you to bundle multiple physical Etherne
 
 ## **2.6 Describe Cisco Wireless Architectures and AP modes**
 
-1\. **Cisco Wireless Architectures: **
+1\. **Cisco Wireless Architectures:**
 
 - Autonomous AP Architecture
   - Operates independently, connecting wireless SSIDs with wired VLANs.
