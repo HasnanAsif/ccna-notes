@@ -114,14 +114,22 @@
 
 EtherChannel is a technology that allows you to bundle multiple physical Ethernet links into a single logical link, providing increased bandwidth and redundancy.
 
-There are two types of EtherChannel protocols:
+- There are two types of EtherChannel protocols:
   - Link Aggregation Control Protocol (LACP)
   - Port Aggregation Protocol (PAgP) *cisco proprietary*
 
-- LACP configuration example:
-  - `interface GigabitEthernet 0/1`
+- Layer 2 Etherchannel with LACP:
+  - `interface range FastEthernet0/1 - 2`
   - `switchport mode trunk`
   - `channel-group 1 mode active`  ( Enable LACP (active mode) )
+
+- Layer 3 Etherchannel with LACP:
+  - `interface range FastEthernet0/1 - 2`
+  - `channel-group 1 mode active` ( Enable LACP (active mode) )
+  - configure port channel interface
+  - `interface port-channel 1`
+  - `no switchport`
+  - `ip address 192.168.1.1 255.255.255.0`  
 
 - channel-group modes
   - `active` : Enable LACP unconditionally
