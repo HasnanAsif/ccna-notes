@@ -191,27 +191,23 @@ EtherChannel is a technology that allows you to bundle multiple physical Etherne
 
 ## **2.6 Describe Cisco Wireless Architectures and AP modes**
 
-1\. **Cisco Wireless Architectures: Define how Aps and controllers work together (centralized, distributed, cloud, or converged).**
+1\. **Cisco Wireless Architectures: **
 
-- Centralized Architecture (Controller-Based)
-  - A Wireless LAN Controller (WLC) manages multiple Access Points (APs) centrally.
-  - All traffic is tunneled to the controller using the Control and Provisioning of Wireless Access Points (CAPWAP) protocol.
-  - Ideal for large networks requiring centralized management, advanced features, and seamless roaming.
-
-- Distributed Architecture (Autonomous Aps)
-  - APs operate independently without a central controller.
-  - Configuration is done manually on each AP, making it suitable for small networks or branch offices.
-  - Limited scalability and centralized management.
-
-- Cloud-Based Architecture
+- Autonomous AP Architecture
+  - Operates independently, connecting wireless SSIDs with wired VLANs.
+  - Acts as a bridge between wired and wireless networks for fast data transfer.
+  - Each AP has a fixed IP for remote management and requires configuration of SSIDs, VLANs, channels, and transmission power.
+    
+- Cloud-Based AP Architecture
   - APs are managed via a cloud-based platform like Cisco Meraki.
-  - Provides centralized management, monitoring, and configuration through a web-based interface.
-  - Ideal for organizations with multiple distributed locations.
+  - APs automatically configure via the cloud after registering with Meraki.
+  - Features include remote management, wireless performance monitoring, and configuration adjustments through a single dashboard.
 
-- Converged Access Architecture
-  - Combines wireless and wired infrastructure management using a Unified Access Layer.
-  - Controllers are embedded within switches, allowing for **local management** of APs.
-  - Suitable for medium-sized networks with tight integration of wired and wireless networks.
+- Split MAC Architecture
+  - Separates management and real-time functions between centralized controllers (WLCs) and lightweight APs.
+  - WLC handles tasks like RF power management, security, and authentication.
+  - Real-time operations, such as data frame transfer and encryption, occur on APs.
+  - Uses CAPWAP (Control and Provisioning of Wireless Access Point) protocol, with distinct tunnels for control messages (authenticated and encrypted) and data packets (optionally encrypted with DTLS).
 
 2\. **Access Point Modes: Determine how an AP operates (client-serving, monitoring, bridging, or analyzing).**
 
