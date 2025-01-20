@@ -205,9 +205,16 @@ EtherChannel is a technology that allows you to bundle multiple physical Etherne
 
 - Split MAC Architecture
   - Separates management and real-time functions between centralized controllers (WLCs) and lightweight APs.
-  - WLC handles tasks like RF power management, security, and authentication.
-  - Real-time operations, such as data frame transfer and encryption, occur on APs.
-  - Uses CAPWAP (Control and Provisioning of Wireless Access Point) protocol, with distinct tunnels for control messages (authenticated and encrypted) and data packets (optionally encrypted with DTLS).
+  - Uses CAPWAP (Control and Provisioning of Wireless Access Point) protocol, with distinct tunnels for control messages (UDP 5246) and data packets (UDP 5247).
+  - LightWeight AP MAC Functions:
+    - 802.11: beacons, probe responses
+    - 802.11 control: packet acknowledgement and transmission
+    - 802.11e: frame queing and packet prioritization
+    - 802.11i: MAC layer data encryption and decryption
+  - LightWeight AP MAC Functions:
+    - 802.11: MAC management: association requests and actions
+    - 802.11e: resource reservation
+    - 802.11i: authentication and key management
 
 2\. **Access Point Modes: Determine how an AP operates (client-serving, monitoring, bridging, or analyzing).**
 
@@ -243,25 +250,24 @@ EtherChannel is a technology that allows you to bundle multiple physical Etherne
 
 ## **2.7 Describe physical infrastructure connections of WLAN components (AP, WLC, access and trunk ports, and LAG)**
 
-**Access Points (Aps)**
-  - Role: Aps connect wireless clients to the wired network
-  - Physical connection
-    - Typically connected to switch access ports.
-    - If using PoE (Power over Ethernet), the AP is powered directly through the Ethernet cable, eliminating the need for a separate power source.
-  - Configuration: Switchport set to access mode for the VLAN serving wireless clients
-    - `interface GigabitEthernet0/1`
-    - `switchport mode access`
-    - `switchport access vlan 10`
+**Access Points Ports (Aps)**
+  - Console: to connect remotely to configure or manage
+  - USB: can place firmware via USB
+  - POE: can connect with a ethernet cable to power on
+  - DC: can also be used to power on
 
 **Wireless LAN Controller (WLC)**
-  - Role: Manages APs, handles wireless traffic, and enforces policies.
-  - Physical Connection:
-    - Connected to the core or distribution switch through trunk ports.
-    - Trunking allows the WLC to handle traffic from multiple VLANs, including management, control, and user traffic VLANs.
-  - Example configuration for WLC connection:
-    - interface GigabitEthernet0/2
-    - `switchport mode trunk`
-    - `switchport trunk allowed vlan 10,20,30`
+  - Physical Interfaces
+    - Service Port: Used for out-of-band management, system recovery, and initial boot functions; always connects toa  switch port in access mode
+    - Redundancy Port: Used to connect to a peer controller for high availability (HA) operation
+    - Console port and Mini USB Console Port: Used for out-of-band management, system recovery, and initial boot functions; asynchronous connection to a terminal emulator 
+    - Distribution Port: Used for all normal AP and management traffic; usually connects to a switch port in 802.1Q trunk mode. You can also configure all of them to operate as a single logical group also knows as LAG.
+  - Logical Interfaces
+    - Dynamic Interfaces: Think of them as VLAN interfaces for wireless networks (SSIDs). One dynamic interface is created per wireless network/SSID. The wireless network or SSID is mapped to a dynamic interface, which is then mapped to a specific VLAN network.
+    - Virtual Interface: Used to manage and support wireless clients by providing DHCP relay functionality, guest web authentication, VPN termination and other services.
+    - AP-Manager Interface: Used to connect to a peer controller for high availability (HA) operation
+    - Management Interface: The default interface used to access and manage the WLC (HTTPS, SSH, NTP, TFTP etc.). The management interface is also used by the access points to communicate with the WLC. THe only ping-able IP address and is used by administrators to manage the WLC.
+    - Service port interface: Bound to the service port and used for out-of-band management.
 
 **Access Ports (APs and Clients)**
   - Purpose: Used for single VLAN assignments.
@@ -294,13 +300,6 @@ EtherChannel is a technology that allows you to bundle multiple physical Etherne
     - `switchport mode trunk`
     - `switchport trunk allowed vlan 10,20,30`
 
-|**Component**|**Connection Type**|**Port Configuration**|**Notes**|
-| :- | :- | :- | :- |
-|**Access Points**|Access Port|switchport mode access|Uses PoE for power or external power source.|
-|**WLC**|Trunk Port / LAG|switchport mode trunk|Handles multiple VLANs for wireless traffic.|
-|**Access Ports**|Single VLAN|switchport access vlan <VLAN-ID>|Used for client or AP connections.|
-|**Trunk Ports**|Multiple VLANs|switchport trunk allowed vlan <vlan-IDs>|Used for APs in FlexConnect or WLC|
-|**LAG**|Multiple Links|channel-group and port-channel config|Provides redundancy and load balancing.|
 
 ## **2.8 Describe network device management access (Telnet, SSH, HTTP, HTTPS, console, TACACS+, RADIUS, and cloud managed)**
 
