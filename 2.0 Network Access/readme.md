@@ -211,7 +211,7 @@ EtherChannel is a technology that allows you to bundle multiple physical Etherne
     - 802.11 control: packet acknowledgement and transmission
     - 802.11e: frame queing and packet prioritization
     - 802.11i: MAC layer data encryption and decryption
-  - LightWeight AP MAC Functions:
+  - WLC MAC Functions:
     - 802.11: MAC management: association requests and actions
     - 802.11e: resource reservation
     - 802.11i: authentication and key management
